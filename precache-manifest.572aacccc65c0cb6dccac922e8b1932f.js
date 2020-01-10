@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "531bf66f74a03bae7052cf4c53defe33",
+    "revision": "472a724a5051eb752563a0a9453774f9",
     "url": "/AndroidDoctorr/androiddoctorr.github.io/index.html"
   },
   {
-    "revision": "7c6ec7fb113fc0700782",
-    "url": "/AndroidDoctorr/androiddoctorr.github.io/static/css/main.05add52b.chunk.css"
+    "revision": "f56ec1e53c92108228da",
+    "url": "/AndroidDoctorr/androiddoctorr.github.io/static/css/main.86e52b98.chunk.css"
   },
   {
     "revision": "240723439beb29a8db6e",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AndroidDoctorr/androiddoctorr.github.io/static/js/2.0da4e046.chunk.js.LICENSE"
   },
   {
-    "revision": "7c6ec7fb113fc0700782",
+    "revision": "f56ec1e53c92108228da",
     "url": "/AndroidDoctorr/androiddoctorr.github.io/static/js/main.615c111b.chunk.js"
   },
   {
