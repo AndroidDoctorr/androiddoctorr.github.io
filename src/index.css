@@ -1,3 +1,6 @@
+@import "./styles/modules.css";
+@import "//fonts.googleapis.com/css?family=Droid+Sans";
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +10,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  background-color: #555;
+  text-align: center;
+  height: 13in;
+}
+
+.resume {
+  width: 8.5in;
+  height: 11in;
+  background-color: #ffffff;
+  display: inline-block;
+  margin: 0 auto;
+  top: 3.75rem;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4)
+}
+
+.downloadLink {
+  display: block;
+  position: relative;
+  top: 5rem;
 }

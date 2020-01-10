@@ -1,0 +1,28 @@
+.main {
+  position: absolute;
+  display: inline-block;
+  width: 5.85in;
+  right: 0;
+  font-family: sans-serif;
+}
+
+.main-intro {
+  font-size: 11pt;
+  padding: 1.5rem 1rem;
+  font-weight: 500;
+}
+
+.main-sectionHeader {
+  color: #0A3154;
+  text-align: left;
+  margin: 0 1.5rem 0 0.5rem;
+  padding: 0.5rem 0.5rem;
+  border-bottom: 0.1rem solid #0A3154;
+  border-top: 0.1rem solid #0A3154;
+  font-family: 'Droid Sans';
+  font-weight: 700;
+}
+
+.main-sectionContainer {
+  padding: 1rem 0;
+}

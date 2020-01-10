@@ -1,0 +1,33 @@
+.experience {
+  display: flex;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  font-size: 11pt;
+}
+
+.experience-dates {
+  flex: 1;
+}
+
+.experience-details {
+  flex: 4;
+}
+
+.experience-title {
+  font-size: 12pt;
+  font-weight: 700;
+}
+
+.experience-location {
+  font-style: italic;
+  padding-bottom: 0.25rem;
+}
+
+.experience-points {
+  padding-inline-start: 1rem;
+  margin-bottom: 0rem;
+}
+
+.experience-point {
+  padding-left: 1rem;
+}

@@ -1,0 +1,37 @@
+.language-name {
+  font-size: 11pt;
+}
+
+.language-proficiencyContainer {
+}
+
+.language-proficiency {
+  text-align: right;
+  font-size: 8pt;
+}
+
+.language-proficiencyBar {
+  background-color: #0f0;
+  height: 0.5rem;
+  margin: 1rem 0 0 0;
+}
+
+.language-proficiencyBar--strong {
+  background-color: #0f0;
+}
+
+.language-proficiencyBar--moderate {
+  background-color: #ff0;
+}
+
+.language-proficiencyBar--some {
+  background-color: #f80;
+}
+
+.language-proficiencyBar--novice {
+  background-color: #f88;
+}
+
+.language-proficiencyBar--none {
+  background-color: #000;
+}

@@ -1,0 +1,24 @@
+.education {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  font-size: 11pt;
+}
+
+.education-title {
+  font-size: 12pt;
+  font-weight: 700;
+}
+
+.education-location {
+  font-style: italic;
+  padding-bottom: 0.25rem;
+}
+
+.education-points {
+  padding-inline-start: 1rem;
+  margin-bottom: 0rem;
+}
+
+.education-point {
+  padding-left: 1rem;
+}
