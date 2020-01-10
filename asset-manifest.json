@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/AndroidDoctorr/androiddoctorr.github.io/static/css/main.86e52b98.chunk.css",
-    "main.js": "/AndroidDoctorr/androiddoctorr.github.io/static/js/main.615c111b.chunk.js",
-    "main.js.map": "/AndroidDoctorr/androiddoctorr.github.io/static/js/main.615c111b.chunk.js.map",
-    "runtime-main.js": "/AndroidDoctorr/androiddoctorr.github.io/static/js/runtime-main.729f17bc.js",
-    "runtime-main.js.map": "/AndroidDoctorr/androiddoctorr.github.io/static/js/runtime-main.729f17bc.js.map",
-    "static/js/2.0da4e046.chunk.js": "/AndroidDoctorr/androiddoctorr.github.io/static/js/2.0da4e046.chunk.js",
-    "static/js/2.0da4e046.chunk.js.map": "/AndroidDoctorr/androiddoctorr.github.io/static/js/2.0da4e046.chunk.js.map",
-    "index.html": "/AndroidDoctorr/androiddoctorr.github.io/index.html",
-    "precache-manifest.572aacccc65c0cb6dccac922e8b1932f.js": "/AndroidDoctorr/androiddoctorr.github.io/precache-manifest.572aacccc65c0cb6dccac922e8b1932f.js",
-    "service-worker.js": "/AndroidDoctorr/androiddoctorr.github.io/service-worker.js",
-    "static/css/main.86e52b98.chunk.css.map": "/AndroidDoctorr/androiddoctorr.github.io/static/css/main.86e52b98.chunk.css.map",
-    "static/js/2.0da4e046.chunk.js.LICENSE": "/AndroidDoctorr/androiddoctorr.github.io/static/js/2.0da4e046.chunk.js.LICENSE"
+    "main.css": "/androiddoctorr.github.io/static/css/main.86e52b98.chunk.css",
+    "main.js": "/androiddoctorr.github.io/static/js/main.731a2a54.chunk.js",
+    "main.js.map": "/androiddoctorr.github.io/static/js/main.731a2a54.chunk.js.map",
+    "runtime-main.js": "/androiddoctorr.github.io/static/js/runtime-main.97ffcb40.js",
+    "runtime-main.js.map": "/androiddoctorr.github.io/static/js/runtime-main.97ffcb40.js.map",
+    "static/js/2.0da4e046.chunk.js": "/androiddoctorr.github.io/static/js/2.0da4e046.chunk.js",
+    "static/js/2.0da4e046.chunk.js.map": "/androiddoctorr.github.io/static/js/2.0da4e046.chunk.js.map",
+    "index.html": "/androiddoctorr.github.io/index.html",
+    "precache-manifest.0236889e16209a4a639cf48810c5aa04.js": "/androiddoctorr.github.io/precache-manifest.0236889e16209a4a639cf48810c5aa04.js",
+    "service-worker.js": "/androiddoctorr.github.io/service-worker.js",
+    "static/css/main.86e52b98.chunk.css.map": "/androiddoctorr.github.io/static/css/main.86e52b98.chunk.css.map",
+    "static/js/2.0da4e046.chunk.js.LICENSE": "/androiddoctorr.github.io/static/js/2.0da4e046.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.729f17bc.js",
+    "static/js/runtime-main.97ffcb40.js",
     "static/js/2.0da4e046.chunk.js",
     "static/css/main.86e52b98.chunk.css",
-    "static/js/main.615c111b.chunk.js"
+    "static/js/main.731a2a54.chunk.js"
   ]
 }
