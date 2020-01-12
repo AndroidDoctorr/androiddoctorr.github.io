@@ -1,0 +1,41 @@
+.project {
+  margin: 1rem 0;
+  padding-top: 1rem;
+  border-top: thin solid #888;
+  width: calc(100% - 1rem);
+}
+
+.project-name {
+  margin: 0;
+}
+
+.project-imagesContainer {
+  margin-top: 1rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.project-imageContainer {
+  height: 256px;
+  display: inline-block;
+  position: relative;
+  left: 1rem;
+  transition: 100ms ease-in-out;
+  z-index: 10;
+  margin: 0 0.5rem;
+}
+
+/*
+.project-imageContainer:focus {
+  height: 512px;
+  display: inline-block;
+  position: absolute;
+  left: 1rem;
+  z-index: 11;
+  margin: 0;
+}
+*/
+
+.project-image {
+  height: 100%;
+}

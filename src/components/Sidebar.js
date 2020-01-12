@@ -15,9 +15,25 @@ class Sidebar extends React.Component {
     return (
       <div className="sidebar">
         <div className="sidebar-section">
+          <img src={require("../me.jpg")} alt="me" className="sidebar-photo" />
           <h1 className="sidebar-heading">Andrew Torr</h1>
-          <span className="sidebar-subHeading">andrewrtorr@gmail.com</span>
+          <span className="sidebar-subHeading">
+            <a
+              className="sidebar-link"
+              href="mailto:andrewrtorr@gmail.com"
+            >
+              andrewrtorr@gmail.com
+            </a>
+          </span>
           <span className="sidebar-subHeading">317.650.3193</span>
+          <a
+            className="sidebar-link sidebar-subHeading"
+            href="https://www.linkedin.com/in/andrew-torr-a9305832/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
           <br />
         </div>
         <div className="sidebar-section">

@@ -13,9 +13,19 @@
   flex: 4;
 }
 
+.experience-titleRow {
+
+}
+
 .experience-title {
+  display: inline-block;
   font-size: 12pt;
   font-weight: 700;
+}
+
+.experience-projectLink {
+  position: absolute;
+  right: 2rem;
 }
 
 .experience-location {

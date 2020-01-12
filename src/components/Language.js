@@ -26,8 +26,6 @@ function getWidth(proficiency) {
 }
 
 export default function Language(props) {
-
-
   return (
     <div className="language">
       <div className="language-name">
