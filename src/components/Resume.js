@@ -24,7 +24,7 @@ function Resume(props) {
           {"Full-stack (primarily front-end) developer with 5 years professional experience."}
         </div>
         <h3 className="main-sectionHeader">
-          {"Experience"}
+          {this.props.isNinetiesMode ? <marquee>{"Experience"}</marquee> : "Experience"}
         </h3>
         <div className="main-sectionContainer">
           {experiences.map(experience =>
@@ -39,7 +39,7 @@ function Resume(props) {
           )}
         </div>
         <h3 className="main-sectionHeader">
-          {"Education"}
+          {this.props.isNinetiesMode ? <marquee>{"Education"}</marquee> : "Education"}
         </h3>
         <div className="main-sectionContainer">
           {educations.map(education =>
