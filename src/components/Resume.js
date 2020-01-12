@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import classNames from 'classnames';
 import Modal from 'react-modal';
 import Sidebar from './Sidebar';
 import Experience from './Experience';
@@ -20,11 +21,11 @@ function Resume(props) {
     <div className="resume">
       <Sidebar colorTheme={props.colorTheme} />
       <div className="main">
-        <div className="main-intro">
+        <div className={classNames("main-intro", { "main-intro--nineties": props.isNinetiesMode })}>
           {"Full-stack (primarily front-end) developer with 5 years professional experience."}
         </div>
         <h3 className="main-sectionHeader">
-          {this.props.isNinetiesMode ? <marquee>{"Experience"}</marquee> : "Experience"}
+          {props.isNinetiesMode ? <marquee>{"Experience"}</marquee> : "Experience"}
         </h3>
         <div className="main-sectionContainer">
           {experiences.map(experience =>
@@ -39,7 +40,7 @@ function Resume(props) {
           )}
         </div>
         <h3 className="main-sectionHeader">
-          {this.props.isNinetiesMode ? <marquee>{"Education"}</marquee> : "Education"}
+          {props.isNinetiesMode ? <marquee>{"Education"}</marquee> : "Education"}
         </h3>
         <div className="main-sectionContainer">
           {educations.map(education =>

@@ -11,6 +11,10 @@
   font-weight: 500;
 }
 
+.main-intro--nineties {
+  padding: 0.5rem 1rem;
+}
+
 .main-sectionHeader {
   color: #0A3154;
   text-align: left;
