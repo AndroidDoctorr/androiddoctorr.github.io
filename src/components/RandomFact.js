@@ -1,11 +1,12 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { getRandomFact } from '../utils';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRandom } from '@fortawesome/free-solid-svg-icons';
 
 class RandomFact extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = { randomFact: getRandomFact() };
     this.timeout = setTimeout(() => this.getNewFact(), 30000);
   }
@@ -19,7 +20,11 @@ class RandomFact extends React.Component {
   render() {
     return (
       <span className="randomFact">
-        {this.state.randomFact}
+        {this.props.isNinetiesMode ?
+          <marquee className="randomFact-marquee">{this.state.randomFact}</marquee>
+        :
+          this.state.randomFact
+        }
         <button
           title="New Random Fact"
           onClick={() => this.getNewFact()}
@@ -32,4 +37,10 @@ class RandomFact extends React.Component {
   }
 }
 
-export default RandomFact;
+const mapStateToProps = state => {
+  return {
+    isNinetiesMode: state.isNinetiesMode,
+  }
+}
+
+export default connect(mapStateToProps)(RandomFact);

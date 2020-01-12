@@ -38,32 +38,6 @@ body {
   font-size: 14pt;
 }
 
-.randomFact {
-  display: block;
-  position: relative;
-  top: 1.5rem;
-  margin: auto;
-  color: white;
-}
-
-.randomFact > button {
-  color: white;
-  margin-left: 1rem;
-  background-color: #888;
-  border-radius: 50%;
-  height: 24px;
-  width: 24px;
-  padding: 2px 0 0 0;
-}
-
-.randomFact > button:hover {
-  border: thin solid white;
-}
-
-.randomFact > button:focus {
-  outline: none;
-}
-
 .button-clear {
   color: -webkit-link;
   cursor: pointer;
