@@ -17,7 +17,7 @@ export default function Education(props) {
       </div>
       <ul className="education-points">
         {props.points.map(point =>
-          <li className="education-point">
+          <li className="education-point" key={point.substring(0,16)}>
             {point}
           </li>
         )}

@@ -17,13 +17,17 @@ body {
   width: 100%;
 }
 
+.containerNineties {
+  background: url('./stars.gif') repeat;
+  cursor: url(./cur45.ani), url(./cur45.png), default !important;
+}
+
 .resume {
   width: 8.5in;
   height: 11in;
   background-color: #ffffff;
   display: inline-block;
-  margin: 0 auto;
-  top: 3.75rem;
+  margin: 3.75rem auto 0 auto;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4)
 }
@@ -31,7 +35,6 @@ body {
 .downloadLink {
   display: block;
   position: relative;
-  top: 5rem;
 }
 
 .randomFact {
@@ -66,4 +69,47 @@ body {
   -webkit-appearance: none;
   background: none;
   border: none;
+}
+
+.styleContainer {
+  width: 8.5in;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.styleButtonGroup {
+  display: inline-block;
+  padding-top: 1rem;
+}
+
+.styleButton {
+  border-radius: 1rem;
+  background-color: white;
+  width: 1rem;
+  height: 1rem;
+  padding: 0.8rem;
+  overflow: hidden;
+  transition: 200ms ease-in-out;
+  margin-left: 0.5rem;
+  color: black;
+}
+
+.styleButton:hover {
+  width: 12rem;
+}
+
+.styleButtonIcon {
+  display: block;
+  margin-top: -0.35rem;
+  margin-left: -0.35rem;
+}
+
+.visitorCounter {
+  color: #ff0088;
+  font-size: 12pt;
+  margin: 0.5rem 0;
+}
+
+.visitorCounter-number {
+  color: #00ff00;
 }

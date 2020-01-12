@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Modal from 'react-modal';
 import Sidebar from './Sidebar';
 import Experience from './Experience';
@@ -10,14 +11,14 @@ import { experiences, educations, projectList } from '../utils/variables';
 
 Modal.setAppElement('#root')
 
-export default function Resume(props) {
+function Resume(props) {
   const [modalIsOpen, setModalIsOpen] = React.useState(false);
   const [selectedExperience, setSelectedExperience] = React.useState("");
   const projects = projectList[selectedExperience.id];
 
   return (
     <div className="resume">
-      <Sidebar />
+      <Sidebar colorTheme={props.colorTheme} />
       <div className="main">
         <div className="main-intro">
           {"Full-stack (primarily front-end) developer with 5 years professional experience."}
@@ -29,6 +30,7 @@ export default function Resume(props) {
           {experiences.map(experience =>
             <Experience
               {...experience}
+              key={experience.id}
               showProjectModal={() => {
                 setModalIsOpen(true);
                 setSelectedExperience(experience);
@@ -41,7 +43,7 @@ export default function Resume(props) {
         </h3>
         <div className="main-sectionContainer">
           {educations.map(education =>
-            <Education {...education} />
+            <Education {...education} key={education.id} />
           )}
         </div>
       </div>
@@ -66,10 +68,19 @@ export default function Resume(props) {
           </button>
           <div className="modal-projectContainer">
             {!!projects && projects.map(project =>
-              <Project {...project} />
+              <Project {...project} key={project.name} />
             )}
           </div>
       </Modal>
     </div>
   );
 }
+
+const mapStateToProps = state => {
+  return {
+    color: state.color,
+    isNinetiesMode: state.isNinetiesMode,
+  }
+}
+
+export default connect(mapStateToProps)(Resume)

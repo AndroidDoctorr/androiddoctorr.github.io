@@ -13,7 +13,7 @@ class Sidebar extends React.Component {
 
   render() {
     return (
-      <div className="sidebar">
+      <div className="sidebar" style={{ backgroundColor: this.props.colorTheme.primary }}>
         <div className="sidebar-section">
           <img src={require("../me.jpg")} alt="me" className="sidebar-photo" />
           <h1 className="sidebar-heading">Andrew Torr</h1>
@@ -37,7 +37,7 @@ class Sidebar extends React.Component {
           <br />
         </div>
         <div className="sidebar-section">
-          <h3 className="sidebar-sectionHeader">
+          <h3 className="sidebar-sectionHeader" style={{ backgroundColor: this.props.colorTheme.primaryDark }}>
             Skills
           </h3>
           <p className="sidebar-sectionContents">
@@ -51,14 +51,14 @@ class Sidebar extends React.Component {
           </p>
         </div>
         <div className="sidebar-section">
-          <h3 className="sidebar-sectionHeader">
+          <h3 className="sidebar-sectionHeader" style={{ backgroundColor: this.props.colorTheme.primaryDark }}>
             Languages
           </h3>
-          <p className="sidebar-sectionContents">
+          <div className="sidebar-sectionContents">
             {languages.map(language =>
-              <Language {...language} />
+              <Language {...language} key={language.id} />
             )}
-          </p>
+          </div>
         </div>
       </div>
     );

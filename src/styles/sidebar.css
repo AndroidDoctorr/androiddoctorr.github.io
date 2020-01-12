@@ -1,6 +1,5 @@
 .sidebar {
   width: 2.65in;
-  background-color: #1C4587;
   text-align: left;
   height: 100%;
   color: #fff;
@@ -15,6 +14,11 @@
   border-radius: 50%;
   margin: auto;
   margin-top: 1rem;
+  transition: border-radius 100ms ease-in-out;
+}
+
+.sidebar-photo:hover {
+  border-radius: 0;
 }
 
 .sidebar-heading {
@@ -34,7 +38,6 @@
 }
 
 .sidebar-sectionHeader {
-  background-color: #0A3154;
   padding: 0.25rem 1rem;
   margin-block-start: 0;
   margin-block-end: 0;

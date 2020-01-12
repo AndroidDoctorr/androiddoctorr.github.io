@@ -30,7 +30,7 @@ export default function Experience(props) {
         </div>
         <ul className="experience-points">
           {props.points.map(point =>
-            <li className="experience-point">
+            <li className="experience-point" key={point.substring(0,16)}>
               {point}
             </li>
           )}

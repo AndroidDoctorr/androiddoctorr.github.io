@@ -11,34 +11,42 @@ export const randomFacts = [
 export const languages = [
   {
     name: "HTML/CSS",
+    id: "html",
     proficiency: 5,
   },
   {
     name: "JavaScript",
+    id: "js",
     proficiency: 5,
   },
   {
     name: "React",
+    id: "react",
     proficiency: 5,
   },
   {
     name: "React-Native",
+    id: "rn",
     proficiency: 5,
   },
   {
     name: "Java/Android",
+    id: "java",
     proficiency: 5,
   },
   {
     name: "PHP/SQL",
+    id: "php",
     proficiency: 4,
   },
   {
     name: "Python",
+    id: "py",
     proficiency: 3,
   },
   {
     name: "Ruby",
+    id: "ruby",
     proficiency: 2,
   },
 ];
@@ -104,6 +112,7 @@ export const experiences = [
 export const educations = [
   {
     title: "Eleven Fifty Coding Academy",
+    id: "efa",
     url: "https://elevenfifty.org/",
     location: "Carmel, IN",
     points: [
@@ -112,6 +121,7 @@ export const educations = [
   },
   {
     title: "Indiana University",
+    id: "iu",
     url: "https://indiana.edu/index.html",
     location: "Indianapolis, IN",
     points: [
@@ -122,6 +132,7 @@ export const educations = [
   },
   {
     title: "Purdue University",
+    id: "pu",
     url: "https://www.purdue.edu/",
     location: "West Lafayette, IN",
     points: [
@@ -137,10 +148,12 @@ export const projectList = {
       images: [
         {
           source: require("../screenshots/turnitin/gradescope/code_similarity.png"),
+          id: "gs1",
           alt: "Code Similarity",
         },
         {
           source: require("../screenshots/turnitin/gradescope/code_similarity_index.png"),
+          id: "gs2",
           alt: "Code Similarity Index",
         },
       ],
@@ -152,22 +165,27 @@ export const projectList = {
       images: [
         {
           source: require("../screenshots/vericite/vericite/vericite-assignments.png"),
+          id: "vc1",
           alt: "Assignment Page",
         },
         {
           source: require("../screenshots/vericite/vericite/vericite-reportloading.png"),
+          id: "vc2",
           alt: "Report Loading",
         },
         {
           source: require("../screenshots/vericite/vericite/vericite-report.png"),
+          id: "vc3",
           alt: "Report Page",
         },
         {
           source: require("../screenshots/vericite/vericite/vericite-settings.png"),
+          id: "vc4",
           alt: "Settings Page",
         },
         {
           source: require("../screenshots/vericite/vericite/vericite-spanish.png"),
+          id: "vc5",
           alt: "Users Page (en Español)",
         },
       ],
@@ -179,26 +197,32 @@ export const projectList = {
       images: [
         {
           source: require("../screenshots/efc/do/do1.png"),
+          id: "do1",
           alt: "",
         },
         {
           source: require("../screenshots/efc/do/do2.png"),
+          id: "do2",
           alt: "",
         },
         {
           source: require("../screenshots/efc/do/do3.png"),
+          id: "do3",
           alt: "",
         },
         {
           source: require("../screenshots/efc/do/do4.png"),
+          id: "do4",
           alt: "",
         },
         {
           source: require("../screenshots/efc/do/do5.png"),
+          id: "do5",
           alt: "",
         },
         {
           source: require("../screenshots/efc/do/do6.png"),
+          id: "do6",
           alt: "",
         },
       ],
@@ -208,18 +232,22 @@ export const projectList = {
       images: [
         {
           source: require("../screenshots/efc/highpoint/highpoint1.png"),
+          id: "hp1",
           alt: "",
         },
         {
           source: require("../screenshots/efc/highpoint/highpoint2.png"),
+          id: "hp2",
           alt: "",
         },
         {
           source: require("../screenshots/efc/highpoint/highpoint3.png"),
+          id: "hp3",
           alt: "",
         },
         {
           source: require("../screenshots/efc/highpoint/highpoint4.png"),
+          id: "hp4",
           alt: "",
         },
       ],
@@ -229,10 +257,12 @@ export const projectList = {
       images: [
         {
           source: require("../screenshots/efc/revf/revf1.png"),
+          id: "revf1",
           alt: "",
         },
         {
           source: require("../screenshots/efc/revf/revf2.png"),
+          id: "revf2",
           alt: "",
         },
       ],
@@ -242,18 +272,22 @@ export const projectList = {
       images: [
         {
           source: require("../screenshots/efc/brewerymap/brewerymap1.png"),
+          id: "bm1",
           alt: "Brewery Map",
         },
         {
           source: require("../screenshots/efc/brewerymap/brewerymap2.png"),
+          id: "bm2",
           alt: "Brewery Map",
         },
         {
           source: require("../screenshots/efc/brewerymap/brewerymap3.png"),
+          id: "bm3",
           alt: "Brewery Map",
         },
         {
           source: require("../screenshots/efc/brewerymap/brewerymap4.png"),
+          id: "bm4",
           alt: "Brewery Map",
         },
       ],
@@ -267,3 +301,18 @@ export const projectList = {
     },
   ],
 };
+
+export const colorThemes = {
+  blue: {
+    primary: "#1C4587",
+    primaryDark: "#0A3154",
+  },
+  red: {
+    primary: "#771111",
+    primaryDark: "#551111",
+  },
+  green: {
+    primary: "#114011",
+    primaryDark: "#113311",
+  },
+}
