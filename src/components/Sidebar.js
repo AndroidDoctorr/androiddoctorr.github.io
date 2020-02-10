@@ -22,10 +22,9 @@ class Sidebar extends React.Component {
               className="sidebar-link"
               href="mailto:andrewrtorr@gmail.com"
             >
-              andrewrtorr@gmail.com
+              atorr@elevenfifty.org
             </a>
           </span>
-          <span className="sidebar-subHeading">317.650.3193</span>
           <a
             className="sidebar-link sidebar-subHeading"
             href="https://www.linkedin.com/in/andrew-torr-a9305832/"

@@ -53,6 +53,18 @@ export const languages = [
 
 export const experiences = [
   {
+    dates: "2020-",
+    title: "Instructor",
+    company: "Eleven Fifty Academy",
+    id: "efa",
+    url: "https://elevenfifty.org/",
+    location: "Fishers, IN",
+    points: [
+      "Teaching Software Development",
+      "Developing Curriculum",
+    ],
+  },
+  {
     dates: "2018-2020",
     title: "Software Engineer",
     company: "Turnitin LLC",
@@ -130,15 +142,15 @@ export const educations = [
       "Math minor",
     ],
   },
-  {
-    title: "Purdue University",
-    id: "pu",
-    url: "https://www.purdue.edu/",
-    location: "West Lafayette, IN",
-    points: [
-      "Aerospace Engineering",
-    ],
-  },
+  // {
+  //   title: "Purdue University",
+  //   id: "pu",
+  //   url: "https://www.purdue.edu/",
+  //   location: "West Lafayette, IN",
+  //   points: [
+  //     "Aerospace Engineering",
+  //   ],
+  // },
 ];
 
 export const projectList = {
