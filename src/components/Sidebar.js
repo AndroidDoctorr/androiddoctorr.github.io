@@ -46,6 +46,7 @@ class Sidebar extends React.Component {
             jQuery <br/>
             Node/npm <br/>
             Ruby on Rails <br/>
+            ASP.NET <br/>
             Testing (CI, rspec, etc)
           </p>
         </div>

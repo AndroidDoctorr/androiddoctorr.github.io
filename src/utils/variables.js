@@ -40,6 +40,11 @@ export const languages = [
     proficiency: 4,
   },
   {
+    name: "C#/.NET",
+    id: "cs",
+    proficiency: 4,
+  },
+  {
     name: "Python",
     id: "py",
     proficiency: 3,
