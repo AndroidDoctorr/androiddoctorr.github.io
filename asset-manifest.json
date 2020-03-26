@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.8541f280.chunk.css",
+    "main.css": "/static/css/main.faa30fc3.chunk.css",
     "main.js": "/static/js/main.429cb73a.chunk.js",
     "main.js.map": "/static/js/main.429cb73a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3d3bb714.js",
@@ -8,9 +8,9 @@
     "static/js/2.4530da73.chunk.js": "/static/js/2.4530da73.chunk.js",
     "static/js/2.4530da73.chunk.js.map": "/static/js/2.4530da73.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ab35c4f5657ae61051466e3292f54e45.js": "/precache-manifest.ab35c4f5657ae61051466e3292f54e45.js",
+    "precache-manifest.0f03f278c13df11fce30f45915ef8fe9.js": "/precache-manifest.0f03f278c13df11fce30f45915ef8fe9.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.8541f280.chunk.css.map": "/static/css/main.8541f280.chunk.css.map",
+    "static/css/main.faa30fc3.chunk.css.map": "/static/css/main.faa30fc3.chunk.css.map",
     "static/js/2.4530da73.chunk.js.LICENSE": "/static/js/2.4530da73.chunk.js.LICENSE",
     "static/media/Andrew_Torr_Resume.pdf": "/static/media/Andrew_Torr_Resume.b6fd9517.pdf",
     "static/media/brewerymap1.png": "/static/media/brewerymap1.58ef276a.png",
@@ -42,7 +42,7 @@
   "entrypoints": [
     "static/js/runtime-main.3d3bb714.js",
     "static/js/2.4530da73.chunk.js",
-    "static/css/main.8541f280.chunk.css",
+    "static/css/main.faa30fc3.chunk.css",
     "static/js/main.429cb73a.chunk.js"
   ]
 }
