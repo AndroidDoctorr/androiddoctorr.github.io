@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "26ff384c021e4c13ab5b3f025c8c27a3",
+    "revision": "c87052ab83b12498193d1721679abbc8",
     "url": "/index.html"
   },
   {
-    "revision": "6bfa783cceb0abeda2e5",
+    "revision": "0524f0ae1ef3e1600adb",
     "url": "/static/css/main.db4c2b6b.chunk.css"
   },
   {
-    "revision": "141cdee03d1a26b8d045",
-    "url": "/static/js/2.4530da73.chunk.js"
+    "revision": "d5883e4bab33c4aa9592",
+    "url": "/static/js/2.824fbd68.chunk.js"
   },
   {
     "revision": "757dee81ba33cf81c8a0f3462dbeffa0",
-    "url": "/static/js/2.4530da73.chunk.js.LICENSE"
+    "url": "/static/js/2.824fbd68.chunk.js.LICENSE"
   },
   {
-    "revision": "6bfa783cceb0abeda2e5",
-    "url": "/static/js/main.429cb73a.chunk.js"
+    "revision": "0524f0ae1ef3e1600adb",
+    "url": "/static/js/main.11538538.chunk.js"
   },
   {
     "revision": "9ee09d638dd894343126",
@@ -80,6 +80,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/do6.5b2ac0cd.png"
   },
   {
+    "revision": "d159f7bcda00bc8a7314505d7e1bc78d",
+    "url": "/static/media/duckhunt.d159f7bc.png"
+  },
+  {
     "revision": "d871582926ecadd27ecdffd056654a0a",
     "url": "/static/media/highpoint1.d8715829.png"
   },
@@ -96,8 +100,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/highpoint4.e9ffb755.png"
   },
   {
-    "revision": "3195b86c993bd810ca3794e90ce91586",
-    "url": "/static/media/me.3195b86c.jpg"
+    "revision": "da51724b9419bcfffc88bb800a82bdd3",
+    "url": "/static/media/me-blue.da51724b.jpg"
+  },
+  {
+    "revision": "abc9d590a6a7c93cd9e195a65fc89bf7",
+    "url": "/static/media/me-green.abc9d590.jpg"
+  },
+  {
+    "revision": "4f45fd10187b84618e963a7943656031",
+    "url": "/static/media/me-red.4f45fd10.jpg"
   },
   {
     "revision": "8b7422445720e18cc2eb97c26b114f62",
@@ -106,6 +118,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f45262e7e829c39448fcebed3f940f2a",
     "url": "/static/media/revf2.f45262e7.png"
+  },
+  {
+    "revision": "fb10c197fe1b937fac80851a76d20cc1",
+    "url": "/static/media/scratch-1.fb10c197.png"
+  },
+  {
+    "revision": "ecfeba5fa328fdd86034a21341cf4f74",
+    "url": "/static/media/scratch-2.ecfeba5f.png"
+  },
+  {
+    "revision": "bcd520b317d7102c4a76a719b20a09be",
+    "url": "/static/media/scratch-3.bcd520b3.png"
   },
   {
     "revision": "43b6b1c35afba9f2a52da49dacfefefc",
