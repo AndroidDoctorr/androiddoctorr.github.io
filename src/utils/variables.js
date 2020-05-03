@@ -312,8 +312,28 @@ export const projectList = {
   ],
   orchard: [
     {
-      name: "",
+      name: "Scratch",
       images: [
+        {
+          source: require("../screenshots/orchard/scratch/scratch-1.png"),
+          id: "scratch1",
+          alt: "",
+        },
+        {
+          source: require("../screenshots/orchard/scratch/scratch-2.png"),
+          id: "scratch2",
+          alt: "",
+        },
+        {
+          source: require("../screenshots/orchard/scratch/scratch-3.png"),
+          id: "scratch3",
+          alt: "",
+        },
+        {
+          source: require("../screenshots/orchard/scratch/duckhunt.png"),
+          id: "duckhunt",
+          alt: "",
+        },
       ],
     },
   ],

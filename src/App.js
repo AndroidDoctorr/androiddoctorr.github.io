@@ -20,11 +20,11 @@ class App extends React.Component {
   swapColors() {
     const colorModes = Object.keys(colorThemes);
     const currentIndex = colorModes.indexOf(this.state.colorMode);
-    if (currentIndex < (colorModes.length - 1)) {
-      this.setState({ colorMode: colorModes[currentIndex + 1] });
-    } else {
-      this.setState({ colorMode: colorModes[0] });
-    }
+    const colorMode = (currentIndex < (colorModes.length - 1)) ?
+      colorModes[currentIndex + 1] :
+      colorModes[0];
+    this.setState({ colorMode, });
+    this.props.setColor(colorMode);
   }
 
   render() {
@@ -38,7 +38,7 @@ class App extends React.Component {
         }}
       >
         <RandomFact />
-        <Resume colorTheme={colorThemes[this.state.colorMode]} />
+        <Resume colorTheme={colorThemes[this.state.colorMode]} color={this.state.colorMode} />
         <div className="styleContainer">
           <div className="styleButtonGroup">
             <button

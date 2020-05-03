@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Language from './Language';
 import { languages } from '../utils/variables';
 
@@ -12,10 +13,19 @@ class Sidebar extends React.Component {
   }
 
   render() {
+    let imageSource;
+    if (this.props.color === "red") {
+      imageSource = require("../me-red.jpg");
+    } else if (this.props.color === "green") {
+      imageSource = require("../me-green.jpg");
+    } else {
+      imageSource = require("../me-blue.jpg");
+    }
+
     return (
       <div className="sidebar" style={{ backgroundColor: this.props.colorTheme.primary }}>
         <div className="sidebar-section">
-          <img src={require("../me.jpg")} alt="me" className="sidebar-photo" />
+          <img src={imageSource} alt="me" className="sidebar-photo" />
           <h1 className="sidebar-heading">Andrew Torr</h1>
           <span className="sidebar-subHeading">
             <a
@@ -65,4 +75,11 @@ class Sidebar extends React.Component {
   }
 }
 
-export default Sidebar;
+const mapStateToProps = state => {
+  return {
+    isNinetiesMode: state.isNinetiesMode,
+    color: state.color,
+  }
+}
+
+export default connect(mapStateToProps)(Sidebar)
