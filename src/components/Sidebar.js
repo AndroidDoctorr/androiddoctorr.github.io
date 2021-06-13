@@ -50,14 +50,13 @@ class Sidebar extends React.Component {
             Skills
           </h3>
           <p className="sidebar-sectionContents">
-            Firebase <br/>
-            AWS <br/>
-            UI/UX <br/>
-            jQuery <br/>
-            Node/npm <br/>
-            Ruby on Rails <br/>
-            ASP.NET <br/>
-            Testing (CI, rspec, etc)
+            Firebase <br />
+            AWS <br />
+            UI/UX <br />
+            jQuery <br />
+            Node/npm <br />
+            SQL <br />
+            Unit Testing
           </p>
         </div>
         <div className="sidebar-section">

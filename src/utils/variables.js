@@ -4,6 +4,7 @@ export const randomFacts = [
   "In high school, I programmed PONG in Basic on my TI-86 graphing calculator",
   "I once programmed robots to build houses using Lua in Minecraft",
   "I once emulated TCP/IP protocol and encryption using Lua in Minecraft",
+  "I once built a console-based web browser using Lua in Minecraft",
   "I once emulated Duck Hunt for NES on MIT’s Scratch.org as an example for my 5th and 7th grade technology students",
   "I make react-native apps in my spare time for my own convenience and practice",
 ];
@@ -30,18 +31,18 @@ export const languages = [
     proficiency: 5,
   },
   {
+    name: "C#",
+    id: "csharp",
+    proficiency: 5,
+  },
+  {
     name: "Java/Android",
     id: "java",
     proficiency: 5,
   },
   {
-    name: "PHP/SQL",
+    name: "PHP",
     id: "php",
-    proficiency: 4,
-  },
-  {
-    name: "C#/.NET",
-    id: "cs",
     proficiency: 4,
   },
   {
@@ -59,7 +60,7 @@ export const languages = [
 export const experiences = [
   {
     dates: "2020-",
-    title: "Instructor",
+    title: "Senior Instructor",
     company: "Eleven Fifty Academy",
     id: "efa",
     url: "https://elevenfifty.org/",
@@ -143,8 +144,8 @@ export const educations = [
     location: "Indianapolis, IN",
     points: [
       "BS in Physics",
-      "Dean’s list - Straight A's in Physics Classes",
       "Math minor",
+      "Made Dean's List twice",
     ],
   },
   // {
@@ -156,6 +157,17 @@ export const educations = [
   //     "Aerospace Engineering",
   //   ],
   // },
+];
+
+export const certifications = [
+  {
+    title: "MTA Software Development Fundamentals",
+    id: "mtasdf",
+  },
+  {
+    title: "CIW JavaScript Specialist",
+    id: "ciwjs",
+  },
 ];
 
 export const projectList = {
