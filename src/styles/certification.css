@@ -1,0 +1,15 @@
+.certification {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.certification-icon {
+    height: 64px;
+}
+
+.certification-name {
+    font-size: 9pt;
+    font-weight: 700;
+    margin: auto 0.25rem auto 0.5rem;
+    line-height: 1.5rem;
+}

@@ -1,7 +1,7 @@
 .education {
   padding: 0.5rem 0.75rem;
   text-align: left;
-  font-size: 11pt;
+  font-size: 10pt;
 }
 
 .education-title {
@@ -17,6 +17,7 @@
 .education-points {
   padding-inline-start: 1rem;
   margin-bottom: 0rem;
+  margin-top: 0.5rem;
 }
 
 .education-point {

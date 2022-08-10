@@ -7,7 +7,7 @@
 
 .main-intro {
   font-size: 11pt;
-  padding: 1.5rem 1rem;
+  padding: 1rem;
   font-weight: 500;
 }
 
@@ -27,5 +27,5 @@
 }
 
 .main-sectionContainer {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }

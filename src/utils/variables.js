@@ -50,25 +50,30 @@ export const languages = [
     id: "py",
     proficiency: 3,
   },
-  {
-    name: "Ruby",
-    id: "ruby",
-    proficiency: 2,
-  },
 ];
 
 export const experiences = [
   {
-    dates: "2020-",
-    title: "Senior Instructor",
+    dates: "2022-",
+    title: "Curriculum Manager",
     company: "Eleven Fifty Academy",
-    id: "efa",
+    id: "efa2",
     url: "https://elevenfifty.org/",
     location: "Fishers, IN",
     points: [
-      "Teaching Software Development",
       "Developing Curriculum",
+      "Training Instructors",
+      "Building Curriculum Infrastructure",
     ],
+  },
+  {
+    dates: "2020-2022",
+    title: "Senior Instructor",
+    company: "Eleven Fifty Academy",
+    id: "efa1",
+    url: "https://elevenfifty.org/",
+    location: "Fishers, IN",
+    points: ["Taught Software Development", "Developed Curriculum"],
   },
   {
     dates: "2018-2020",
@@ -78,7 +83,7 @@ export const experiences = [
     url: "https://www.turnitin.com/",
     location: "Oakland, CA",
     points: [
-      "Integrated Code Similarity into Gradescope",
+      "Worked on Gradescope Code Similarity integration",
       "Developed plagiarism detection front-end",
       "Implemented SMACSS architecture",
       "Implemented testing using rspec/capybara",
@@ -119,8 +124,8 @@ export const experiences = [
     url: "https://www.orchard.org/",
     location: "Indianapolis, IN",
     points: [
-      "Technology 5th and 7th",
-      "Math 6th and 8th",
+      "Taught Technology 5th and 7th",
+      "Assisted Math & Science, all grades",
       "Lead Math and Science Clubs",
       "Coached LEGO robotics team",
     ],
@@ -133,20 +138,14 @@ export const educations = [
     id: "efa",
     url: "https://elevenfifty.org/",
     location: "Carmel, IN",
-    points: [
-      "Android and Java Immersion Classes",
-    ],
+    points: ["Android and Java Immersion Classes"],
   },
   {
-    title: "Indiana University",
-    id: "iu",
-    url: "https://indiana.edu/index.html",
+    title: "Indiana University/Purdue University Indianapolis",
+    id: "iupui",
+    url: "https://www.iupui.edu/",
     location: "Indianapolis, IN",
-    points: [
-      "BS in Physics",
-      "Math minor",
-      "Made Dean's List twice",
-    ],
+    points: ["BS in Physics", "Math minor", "Made Dean's List twice"],
   },
   // {
   //   title: "Purdue University",
@@ -161,11 +160,21 @@ export const educations = [
 
 export const certifications = [
   {
+    title: "AWS Cloud Practitioner",
+    icon: require("../images/logos/aws-cp.png"),
+    code: "CLF-C01",
+    id: "awscp",
+  },
+  {
     title: "MTA Software Development Fundamentals",
+    icon: require("../images/logos/mta-sd.png"),
+    code: "MTA-98-361",
     id: "mtasdf",
   },
   {
     title: "CIW JavaScript Specialist",
+    icon: require("../images/logos/ciw-jss.png"),
+    code: "1D0-735",
     id: "ciwjs",
   },
 ];
@@ -176,12 +185,12 @@ export const projectList = {
       name: "Gradescope",
       images: [
         {
-          source: require("../screenshots/turnitin/gradescope/code_similarity.png"),
+          source: require("../images/screenshots/turnitin/gradescope/code_similarity.png"),
           id: "gs1",
           alt: "Code Similarity",
         },
         {
-          source: require("../screenshots/turnitin/gradescope/code_similarity_index.png"),
+          source: require("../images/screenshots/turnitin/gradescope/code_similarity_index.png"),
           id: "gs2",
           alt: "Code Similarity Index",
         },
@@ -193,27 +202,27 @@ export const projectList = {
       name: "VeriCite",
       images: [
         {
-          source: require("../screenshots/vericite/vericite/vericite-assignments.png"),
+          source: require("../images/screenshots/vericite/vericite/vericite-assignments.png"),
           id: "vc1",
           alt: "Assignment Page",
         },
         {
-          source: require("../screenshots/vericite/vericite/vericite-reportloading.png"),
+          source: require("../images/screenshots/vericite/vericite/vericite-reportloading.png"),
           id: "vc2",
           alt: "Report Loading",
         },
         {
-          source: require("../screenshots/vericite/vericite/vericite-report.png"),
+          source: require("../images/screenshots/vericite/vericite/vericite-report.png"),
           id: "vc3",
           alt: "Report Page",
         },
         {
-          source: require("../screenshots/vericite/vericite/vericite-settings.png"),
+          source: require("../images/screenshots/vericite/vericite/vericite-settings.png"),
           id: "vc4",
           alt: "Settings Page",
         },
         {
-          source: require("../screenshots/vericite/vericite/vericite-spanish.png"),
+          source: require("../images/screenshots/vericite/vericite/vericite-spanish.png"),
           id: "vc5",
           alt: "Users Page (en Español)",
         },
@@ -225,32 +234,32 @@ export const projectList = {
       name: "Do",
       images: [
         {
-          source: require("../screenshots/efc/do/do1.png"),
+          source: require("../images/screenshots/efc/do/do1.png"),
           id: "do1",
           alt: "",
         },
         {
-          source: require("../screenshots/efc/do/do2.png"),
+          source: require("../images/screenshots/efc/do/do2.png"),
           id: "do2",
           alt: "",
         },
         {
-          source: require("../screenshots/efc/do/do3.png"),
+          source: require("../images/screenshots/efc/do/do3.png"),
           id: "do3",
           alt: "",
         },
         {
-          source: require("../screenshots/efc/do/do4.png"),
+          source: require("../images/screenshots/efc/do/do4.png"),
           id: "do4",
           alt: "",
         },
         {
-          source: require("../screenshots/efc/do/do5.png"),
+          source: require("../images/screenshots/efc/do/do5.png"),
           id: "do5",
           alt: "",
         },
         {
-          source: require("../screenshots/efc/do/do6.png"),
+          source: require("../images/screenshots/efc/do/do6.png"),
           id: "do6",
           alt: "",
         },
@@ -260,22 +269,22 @@ export const projectList = {
       name: "HighPoint",
       images: [
         {
-          source: require("../screenshots/efc/highpoint/highpoint1.png"),
+          source: require("../images/screenshots/efc/highpoint/highpoint1.png"),
           id: "hp1",
           alt: "",
         },
         {
-          source: require("../screenshots/efc/highpoint/highpoint2.png"),
+          source: require("../images/screenshots/efc/highpoint/highpoint2.png"),
           id: "hp2",
           alt: "",
         },
         {
-          source: require("../screenshots/efc/highpoint/highpoint3.png"),
+          source: require("../images/screenshots/efc/highpoint/highpoint3.png"),
           id: "hp3",
           alt: "",
         },
         {
-          source: require("../screenshots/efc/highpoint/highpoint4.png"),
+          source: require("../images/screenshots/efc/highpoint/highpoint4.png"),
           id: "hp4",
           alt: "",
         },
@@ -285,12 +294,12 @@ export const projectList = {
       name: "Real Estate Vendor Fair",
       images: [
         {
-          source: require("../screenshots/efc/revf/revf1.png"),
+          source: require("../images/screenshots/efc/revf/revf1.png"),
           id: "revf1",
           alt: "",
         },
         {
-          source: require("../screenshots/efc/revf/revf2.png"),
+          source: require("../images/screenshots/efc/revf/revf2.png"),
           id: "revf2",
           alt: "",
         },
@@ -300,22 +309,22 @@ export const projectList = {
       name: "Brewery Map",
       images: [
         {
-          source: require("../screenshots/efc/brewerymap/brewerymap1.png"),
+          source: require("../images/screenshots/efc/brewerymap/brewerymap1.png"),
           id: "bm1",
           alt: "Brewery Map",
         },
         {
-          source: require("../screenshots/efc/brewerymap/brewerymap2.png"),
+          source: require("../images/screenshots/efc/brewerymap/brewerymap2.png"),
           id: "bm2",
           alt: "Brewery Map",
         },
         {
-          source: require("../screenshots/efc/brewerymap/brewerymap3.png"),
+          source: require("../images/screenshots/efc/brewerymap/brewerymap3.png"),
           id: "bm3",
           alt: "Brewery Map",
         },
         {
-          source: require("../screenshots/efc/brewerymap/brewerymap4.png"),
+          source: require("../images/screenshots/efc/brewerymap/brewerymap4.png"),
           id: "bm4",
           alt: "Brewery Map",
         },
@@ -327,22 +336,22 @@ export const projectList = {
       name: "Scratch",
       images: [
         {
-          source: require("../screenshots/orchard/scratch/scratch-1.png"),
+          source: require("../images/screenshots/orchard/scratch/scratch-1.png"),
           id: "scratch1",
           alt: "",
         },
         {
-          source: require("../screenshots/orchard/scratch/scratch-2.png"),
+          source: require("../images/screenshots/orchard/scratch/scratch-2.png"),
           id: "scratch2",
           alt: "",
         },
         {
-          source: require("../screenshots/orchard/scratch/scratch-3.png"),
+          source: require("../images/screenshots/orchard/scratch/scratch-3.png"),
           id: "scratch3",
           alt: "",
         },
         {
-          source: require("../screenshots/orchard/scratch/duckhunt.png"),
+          source: require("../images/screenshots/orchard/scratch/duckhunt.png"),
           id: "duckhunt",
           alt: "",
         },
@@ -364,4 +373,4 @@ export const colorThemes = {
     primary: "#114011",
     primaryDark: "#113311",
   },
-}
+};

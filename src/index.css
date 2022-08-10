@@ -8,10 +8,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #555;
 }
 
 .container {
-  background-color: #555;
   text-align: center;
   padding-bottom: 2rem;
   height: 100%;
@@ -19,8 +19,8 @@ body {
 }
 
 .containerNineties {
-  background: url('./stars.gif') repeat;
-  cursor: url(./cur45.ani), url(./cur45.png), default !important;
+  background: url('./images/stars.gif') repeat;
+  cursor: url(./images/cur45.ani), url(./images/cur45.png), default !important;
 }
 
 .resume {
