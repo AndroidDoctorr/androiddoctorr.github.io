@@ -160,22 +160,36 @@ export const educations = [
 
 export const certifications = [
   {
+    id: "awscp",
     title: "AWS Cloud Practitioner",
     icon: require("../images/logos/aws-cp.png"),
+    url: "https://aws.amazon.com/certification/certified-cloud-practitioner/",
     code: "CLF-C01",
-    id: "awscp",
+    date: "2022",
   },
   {
+    id: "mtasdf",
     title: "MTA Software Development Fundamentals",
     icon: require("../images/logos/mta-sd.png"),
+    url: "https://docs.microsoft.com/en-us/certifications/exams/98-361",
     code: "MTA-98-361",
-    id: "mtasdf",
+    date: "2021",
   },
   {
+    id: "ciwjs",
     title: "CIW JavaScript Specialist",
     icon: require("../images/logos/ciw-jss.png"),
+    url: "https://www.ciwcertified.com/ciw-certifications/web-development-series/javascript-specialist",
     code: "1D0-735",
-    id: "ciwjs",
+    date: "2021",
+  },
+  {
+    id: "lssgb",
+    title: "IASSC Green Belt",
+    icon: require("../images/logos/lss-gb.png"),
+    url: "https://iassc.org/six-sigma-certification/green-belt-certification/",
+    code: "GBV-0001",
+    date: "2020",
   },
 ];
 

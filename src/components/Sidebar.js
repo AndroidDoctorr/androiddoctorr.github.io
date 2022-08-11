@@ -52,7 +52,6 @@ class Sidebar extends React.Component {
           >
             GitHub
           </a>
-          <br />
         </div>
         <div className="sidebar-section">
           <h3
