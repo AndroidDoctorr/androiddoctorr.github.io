@@ -1,41 +1,33 @@
-import React from 'react';
+import Role from './Role'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faExternalLink } from '@fortawesome/free-solid-svg-icons'
 
-export default function Experience(props) {
-  return (
-    <div className="experience">
-      <div className="experience-dates">
-        <span>{props.dates}</span>
-      </div>
-      <div className="experience-details">
-        <div className="experience-titleRow">
-          <div className="experience-title">
-            {props.title}
-          </div>
-          <button
-            className="experience-projectLink button-clear"
-            onClick={() => props.showProjectModal(props.id)}
-          >
-            {"[Projects]"}
-          </button>
+function Experience(props) {
+    return (
+        <div className='experience'>
+            <h3 className='experience-title'>
+                {props.item.title}
+                {props.item.url &&
+                    <a href={props.item.url} target='_blank' rel='noopener noreferrer'>
+                        <FontAwesomeIcon icon={faExternalLink} />
+                    </a>
+                }
+            </h3>
+            <div className='experience-body'>
+                <div className='experience-colorBar'>
+                    <div
+                        className='experience-color'
+                        style={{ backgroundColor: props.item.color }}
+                    ></div>
+                </div>
+                <div className='experience-roles'>
+                    {props.item.roles.map(
+                        role => { return Role({ role }) }
+                    )}
+                </div>
+            </div>
         </div>
-        <div className="experience-location">
-          <a
-            href={props.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {props.company}
-          </a>
-          {" - " + props.location}
-        </div>
-        <ul className="experience-points">
-          {props.points.map(point =>
-            <li className="experience-point" key={point.substring(0,16)}>
-              {point}
-            </li>
-          )}
-        </ul>
-      </div>
-    </div>
-  );
+    )
 }
+
+export default Experience;

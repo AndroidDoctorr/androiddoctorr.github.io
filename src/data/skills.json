@@ -1,0 +1,27 @@
+[
+    {
+        "skills": [
+            [
+                "C#/.NET",
+                "HTML/CSS",
+                "Java/Android",
+                "JavaScript, TypeScript",
+                "SQL",
+                "React"
+            ],
+            [
+                "Visual Studio",
+                "Unity",
+                "Blender",
+                "Docker",
+                "Azure",
+                "AWS"
+            ],
+            [
+                "3D Modeling",
+                "Sound Editing",
+                "Music Synthesis"
+            ]
+        ]
+    }
+]

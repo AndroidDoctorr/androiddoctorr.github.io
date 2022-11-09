@@ -1,0 +1,36 @@
+[
+    {
+        "title": "Unity",
+        "color": "#959595",
+        "roles": [
+            {
+                "title": "Bubble Siege",
+                "dates": "",
+                "duties": [
+                    "A complete Virtual Reality game using the SteamVR Input library",
+                    "Uses original 3D modeled assets I made using Blender 3D",
+                    "Uses custom 2D texture assets I made using GIMP 2.0",
+                    "Uses Perlin noise to generate terrains, populate forests, and determine terrain texture",
+                    "Uses A* algorithm to determine pathing for “enemies” (bubbles with medieval armaments)",
+                    "Awaiting review for the Steam store"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "React Native",
+        "color": "#00dbff",
+        "roles": [
+            {
+                "title": "GeoPad",
+                "dates": "",
+                "duties": [
+                    "Uses an ExpressJS API hosted on Google Firebase for the back-end",
+                    "Makes extensive use of the Google Maps API, placing custom geometry and features",
+                    "Fully internationalized - can change the language with the click of a button, strings/string formats all stored in separate json files by language",
+                    "Uses some custom react-native components, like a pop-out menu button (tap on a round “+” button, and it explodes into N evenly spaced buttons that move outward radially from the center, between two given angles)"
+                ]
+            }
+        ]
+    }
+]

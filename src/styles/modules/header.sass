@@ -1,0 +1,27 @@
+@use '../variables' as v
+
+.header
+    color: white
+    display: flex
+    a
+        color: white
+        text-decoration: none
+        margin-left: 1rem
+    img
+        flex: 0
+        padding: 0.25rem
+        height: 10rem
+    &.blue
+        background-color: v.$blue-dark
+    &.green
+        background-color: v.$green-dark
+    &.red
+        background-color: v.$red-dark
+    &-info
+        flex: 1
+        padding-left: 1rem
+        font-weight: 600
+        h1
+            margin-top: 2rem
+        div
+            margin-top: 1rem

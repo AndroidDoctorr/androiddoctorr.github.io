@@ -1,0 +1,107 @@
+[
+    {
+        "title": "Eleven Fifty Academy",
+        "url": "https://www.elevenfifty.org/",
+        "color": "#85200c",
+        "roles": [
+            {
+                "title": "Curriculum Manager",
+                "dates": "Jan 2022 - Sep 2022",
+                "duties": [
+                    "Built new C#/.NET curriculum to introduce Blazor",
+                    "Combined React/JS and C#/.NET courses to produce Coding Foundations - focuses on complete web apps using C#/.NET back end and either a Blazor or React front end",
+                    "Built new JS curriculum focused on manipulating the document model to bridge the gap between basic JS and React",
+                    "Built curriculum infrastructure, including scheduling, rubrics, roles, definitions, etc.",
+                    "Cross-trained other instructors in C#/.NET, JS, and SQL"
+                ]
+            },
+            {
+                "title": "Senior Instructor",
+                "dates": "Mar 2021 - Jan 2022",
+                "duties": [
+                    "Taught Software Development (C#/.NET) courses - over 130 students across 6 classes",
+                    "Built new C#/.NET curriculum to update the course from Framework to .NET 6",
+                    "Introduced new curriculum to cover the basics of SQL and Agile",
+                    "Worked on side projects in C#/.NET, including Azure Functions, Blazor, and ML.NET"
+                ]
+            },
+            {
+                "title": "Instructor",
+                "dates": "Jan 2020 - Mar 2021",
+                "duties": [
+                    "Taught Software Development (C#/.NET) courses - over 100 students across 5 courses",
+                    "Lectured, led code reviews, graded assignments, and answered student questions",
+                    "Moved to remote teaching in March 2020, started using Zoom to teach class",
+                    "Managed classes with Canvas",
+                    "Used Slack for class management and company-wide communication"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Turnitin",
+        "url": "https://www.turnitin.com/",
+        "color": "#3c78d8",
+        "roles": [
+            {
+                "title": "Software Engineer",
+                "dates": "Feb 2018 - Jan 2020",
+                "duties": [
+                    "Worked on front end for MOSS code similarity using React and Sass",
+                    "Built cross-platform migration function using AWS Lambda in Java",
+                    "Worked on Gradescope code similarity front end using Ruby on Rails and Sass",
+                    "Used Agile, submitted pull requests for code review, went to scrum meetings"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "VeriCite",
+        "color": "#cc4125",
+        "roles": [
+            {
+                "title": "Software Engineer",
+                "dates": "Aug 2016 - Feb 2018",
+                "duties": [
+                    "Taught myself React and TypeScript",
+                    "Built the entire VeriCite front end, twice",
+                    "Studied the details of web accessibility extensively, passed AAA for WCAG 2"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Eleven Fifty Consulting",
+        "url": "https://www.elevenfifty.org/",
+        "color": "#274e13",
+        "roles": [
+            {
+                "title": "Apprentice Coder",
+                "dates": "Aug 2015 - Aug 2016",
+                "duties": [
+                    "Worked on projects I was assigned - some in-house, some via commercial contracts. These varied in scope, purpose, and code stack. Apprentices worked with professionals to skill up using real-world projects.",
+                    "Developed a small commercial project (a survey website) using PHP and SQL",
+                    "Developed another PHP/SQL site for reserving a table at an expo with email confirmation using WordPress",
+                    "Worked on the Android (Java) version of an experimental social media platform. Created an image editing view that could crop, zoom, draw, add text to, and filter images. The project as a whole saw a lot of progress but was never published."
+                ]
+            }
+        ]
+    },
+    {
+        "title": "The Orchard School",
+        "url": "https://www.orchard.org/",
+        "color": "#38761d",
+        "roles": [
+            {
+                "title": "Teacher",
+                "dates": "Sep 2014 - Jun 2015",
+                "duties": [
+                    "Taught 5th and 7th Technology classes",
+                    "Assisted with 6th and 8th Math and Science classes",
+                    "Coached LEGO Robotics team, the team earned a trophy for most creative solutions (for practice, they also built a small robotic vehicle using LEGO Mindstorms that could be driven by my pet rat - 5th graders did this, in one afternoon!)",
+                    "Created curriculum for the new Technology course, using Code.org, MIT’s Scratch, Sphero, and more"
+                ]
+            }
+        ]
+    }
+]
