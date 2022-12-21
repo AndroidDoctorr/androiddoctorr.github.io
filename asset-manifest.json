@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9308830e.css",
-    "main.js": "/static/js/main.85f7aea8.js",
+    "main.js": "/static/js/main.1c69fbdc.js",
     "static/js/787.a5fa54f9.chunk.js": "/static/js/787.a5fa54f9.chunk.js",
     "static/media/Andrew_Torr_Resume.pdf": "/static/media/Andrew_Torr_Resume.ca74696fad430fdb21cc.pdf",
     "static/media/lss-gb.png": "/static/media/lss-gb.98aa9368c44b09b0b9fa.png",
@@ -15,11 +15,11 @@
     "static/media/cur45.ani": "/static/media/cur45.2f818555e4462cb02feb.ani",
     "index.html": "/index.html",
     "main.9308830e.css.map": "/static/css/main.9308830e.css.map",
-    "main.85f7aea8.js.map": "/static/js/main.85f7aea8.js.map",
+    "main.1c69fbdc.js.map": "/static/js/main.1c69fbdc.js.map",
     "787.a5fa54f9.chunk.js.map": "/static/js/787.a5fa54f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9308830e.css",
-    "static/js/main.85f7aea8.js"
+    "static/js/main.1c69fbdc.js"
   ]
 }
