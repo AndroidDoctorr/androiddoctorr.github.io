@@ -13,25 +13,22 @@ Open the local URL Vite prints (usually `http://localhost:5173`).
 
 ## Deploy to GitHub Pages
 
-This repo is configured for a **project site** at:
+This repo is configured for the **user site** at:
 
-`https://androiddoctorr.github.io/my-site-2/`
+`https://androiddoctorr.github.io/`
 
-1. Push to GitHub.
+1. Push to the `AndroidDoctorr.github.io` repo on GitHub.
 2. In the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 3. Push to `main` (or run the **Deploy to GitHub Pages** workflow manually).
 
-The workflow runs `npm run build:pages`, which uses `--mode pages` and `.env.pages` for the public URL and `/my-site-2/` asset base path.
+The workflow runs `npm run build:pages`, which uses `--mode pages`, `.env.pages`, and `base: '/'`.
 
-### Custom domain or different repo name
+### Project site instead (`/my-repo/`)
 
-Update these if your URL changes:
+If you deploy a **project site** (not `username.github.io`), set in `vite.config.js`:
 
-- `.env.pages` — `VITE_SITE_URL`
-- `vite.config.js` — `base: '/my-site-2/'` inside `buildSiteConfig`
-- `public/CNAME` (optional) — your custom domain
-
-For a **user site** (`username.github.io` repo), set `base: '/'` and the matching `VITE_SITE_URL`.
+- `base: '/your-repo-name/'`
+- `VITE_SITE_URL=https://androiddoctorr.github.io/your-repo-name` in `.env.pages`
 
 ## SEO & contact
 

@@ -1,5 +1,5 @@
 export const SITE_URL =
-  import.meta.env.VITE_SITE_URL ?? 'https://androiddoctorr.github.io/my-site-2'
+  import.meta.env.VITE_SITE_URL ?? 'https://androiddoctorr.github.io'
 
 export const SITE_TITLE = 'Andrew Torr — Portfolio'
 

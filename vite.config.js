@@ -3,12 +3,10 @@ import react from '@vitejs/plugin-react'
 import { resolve } from 'node:path'
 import { writeFileSync } from 'node:fs'
 
-function buildSiteConfig(env, mode) {
-  const isGitHubPages = mode === 'pages' || process.env.GITHUB_PAGES === 'true'
-
+function buildSiteConfig(env) {
   return {
-    url: env.VITE_SITE_URL ?? 'https://androiddoctorr.github.io/my-site-2',
-    base: isGitHubPages ? '/my-site-2/' : '/',
+    url: env.VITE_SITE_URL ?? 'https://androiddoctorr.github.io',
+    base: '/',
     title: 'Andrew Torr — Portfolio',
     description:
       'Internal systems developer building web apps, APIs, dashboards, and AI-assisted automation for utilities, ISPs, and small organizations.',
@@ -33,7 +31,7 @@ function injectSitePlaceholders(html, site) {
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
-  const site = buildSiteConfig(env, mode)
+  const site = buildSiteConfig(env)
 
   return {
     base: site.base,
