@@ -1,0 +1,33 @@
+[
+    {
+        "category": "Core strengths",
+        "items": [
+            "Internal business applications",
+            "API design and integration",
+            "Monitoring and network tooling",
+            "Automation and scripting",
+            "AI-assisted workflow prototypes",
+            "Teaching technical concepts"
+        ]
+    },
+    {
+        "category": "Stack",
+        "items": [
+            "React / TypeScript frontends",
+            ".NET / Node backends",
+            "SQL / PostgreSQL schema design",
+            "PowerShell, Linux, nginx",
+            "Azure Static Web Apps, GitHub Actions",
+            "C#, JavaScript, Docker"
+        ]
+    },
+    {
+        "category": "Also",
+        "items": [
+            "Unity / VR development",
+            "3D modeling (Blender)",
+            "Java / Android",
+            "AWS, Azure"
+        ]
+    }
+]

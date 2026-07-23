@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Magic Wand",
+        "description": "A 3D printed wand with an Arduino-powered LED star",
+        "category": "3D Printing",
+        "status": "in progress",
+        "stack": "Python, Arduino, Blender, 3D Printing (Elegoo Centauri Carbon 2)",
+        "features": [
+            "Arduino-powered LED star that can be controlled by a Python script",
+            "Multiple modes of operation",
+            "Uses lighting tricks (color cycling, fresnel lensing, etc.) to look magical"
+        ]
+    },
+    {
+        "name": "Untitled Earth Map Minecraft Mod",
+        "description": "A Minecraft mod that generate realistic terrain and features",
+        "category": "Minecraft Mod",
+        "status": "in progress",
+        "stack": "Java, Forge",
+        "features": [
+            "Uses ArcGIS data to generate realistic terrain and features based on elevation, ecoregion, etc.",
+            "Adds to, blends, and adds gradients to biome definitions",
+            "Uses custom foliage and tree generation",
+            "Compatible with Materia - augments biomes with more diverse vegetation"
+        ]
+    },
+    {
+        "name": "Sunrise",
+        "description": "The first album produced by Awaken, my high school band",
+        "category": "Album",
+        "subcategory": "Electronic",
+        "status": "released (2003)",
+        "stack": "FL Studio",
+        "features": [
+            "Produced by me and my friend Aaron (aka Defense Mechanism)"
+        ]
+    },
+    {
+        "name": "Gravitational Disaster",
+        "description": "The second album produced by Awaken, my high school band",
+        "category": "Album",
+        "subcategory": "Electronic",
+        "status": "released (2004)",
+        "stack": "FL Studio",
+        "features": [
+            "Produced by me and my friend Aaron (aka Defense Mechanism)"
+        ]
+    },
+    {
+        "name": "Pantheon",
+        "description": "My first solo album",
+        "category": "Album",
+        "subcategory": "Electronic",
+        "status": "released, but incomplete (2006)",
+        "stack": "FL Studio"
+    }
+]

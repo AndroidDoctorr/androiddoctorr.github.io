@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Eleven Fifty Academy",
+        "url": "https://www.elevenfifty.org/",
+        "color": "#bf9000",
+        "roles": [
+            {
+                "title": "Java/Android Immersion",
+                "dates": "Jun 2015 - Aug 2015",
+                "duties": [
+                    "Learned the basics of OOP, mobile development, and Agile",
+                    "Learned the basics of the Java language",
+                    "Learned about Android application structure, lifecycle management/methods, permissions, and features (camera, file storage, http, etc)",
+                    "Learned basic git commands"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Indiana University (at IUPUI)",
+        "url": "https://www.iupui.edu/",
+        "color": "#990000",
+        "roles": [
+            {
+                "title": "Physics (Bachelor's)",
+                "dates": "Aug 2008 - May 2011",
+                "duties": [
+                    "Minored in Mathematics",
+                    "Made the Dean's List twice senior year",
+                    "Straight A's in physics classes junior and senior years",
+                    "Conducted physical experiments, wrote lab reports",
+                    "Took electives focusing heavily on Linear Algebra and Computer Science",
+                    "Senior thesis discussed a method for detecting primordial black holes using gamma ray telescopy"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "id": "recycle-bin",
+        "label": "Recycle Bin",
+        "kind": "recycle-bin",
+        "glyph": "🗑️"
+    },
+    {
+        "id": "terminal",
+        "label": "Terminal",
+        "kind": "terminal",
+        "glyph": "⌨️"
+    },
+    {
+        "id": "music",
+        "label": "Music",
+        "kind": "media-player",
+        "glyph": "🎵"
+    }
+]

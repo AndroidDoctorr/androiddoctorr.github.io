@@ -1,0 +1,177 @@
+[
+    {
+        "name": "Indomar",
+        "description": "My personal AI assistant",
+        "category": "Web App (private)",
+        "status": "active",
+        "stack": "Python, React, React-Native, Node.js, Google Firebase",
+        "features": [
+            "Qwen3.5 9B, Gemma3 12B, Qwen2.5 14B, and more",
+            "Private VPN access",
+            "Custom ReAct loop with working memory, STM, and LTM objects",
+            "Custom set of subagents with specific roles",
+            "web search, account integrations, and a variety of other tools",
+            "Lord of the Rings themed (Indomar is Quenya for 'House of Thought') - used to define subagent roles via analogy",
+            "Multi-threaded and multi-process architecture",
+            "Inbox for clarifying questions and tasks",
+            "Autonomous and semi-autonomous operation",
+            "'Dream mode' for long-term planning and goal-setting",
+            "Image generation and processing tools"
+        ]
+    },
+    {
+        "name": "Mango",
+        "description": "An automated asset trading system",
+        "category": "Mobile App (private)",
+        "status": "in beta",
+        "stack": "Python, React-Native, Express, Node.js, Google Firebase",
+        "features": [
+            "Daily research cycle via AlphaVantage, Yahoo Finance, and other sources",
+            "Custom sentiment analysis and risk assessment",
+            "Autonomous trading 'bots' that can evolve based on performance",
+            "Paper vs real trading",
+            "Experimental data collection for fine-tuning custom sentiment models based on historical correlations"
+        ]
+    },
+    {
+        "name": "ScenAIrio",
+        "description": "An LLM-powered conversation scenario simulator and analyzer",
+        "category": "Web App (public)",
+        "status": "active",
+        "stack": "React, Express, Node.js, Google Firebase",
+        "url": "https://scenair.io",
+        "features": [
+            "Create and manage conversation scenarios and characters",
+            "Practice conversations, guided by strict rules and context",
+            "Analyze your performance with the Conversation Coach (LLM-powered)",
+            "Track improvement over time",
+            "Manage organizations and members, assign scenarios, track progress, etc."
+        ]
+    },
+    {
+        "name": "Spar",
+        "description": "Formalized debate and argumentation system",
+        "category": "Web App (public)",
+        "status": "in beta",
+        "stack": "React, Express, Node.js, Google Firebase",
+        "url": "https://spar-be83a.web.app/",
+        "features": [
+            "Create statements and arguments, and support them with evidence and logical links (syllogisms)",
+            "Start structured, focused debates with other users, or branch off from existing debates",
+            "Vote on the strength, relevance, etc. of arguments and evidence",
+            "Follow logical support for a claim all the way down to its necessary assumptions, axioms, and direct evidence and observation",
+            "See exactly where you and someone else disagree, and why",
+            "See exactly where your own beliefs contradict each other, and why",
+            "See how your beliefs align with or differ from different political groups or ideologies"
+        ]
+    },
+    {
+        "name": "State of the Union",
+        "description": "A dashboard visualizing the current economic, health, social, and political situation of the United States with public statistics and trends",
+        "category": "Website (public)",
+        "status": "in beta",
+        "stack": "React, Node.js, Google Firebase",
+        "url": "https://sotu-4c837.web.app/",
+        "features": [
+            "Visualize public statistics and trends",
+            "Compare different states and regions",
+            "See current values, velocities, and accelerations",
+            "Compare trends to recent relevant legislation and policy changes"
+        ]
+    },
+    {
+        "name": "Materia",
+        "description": "A Minecraft Mod that makes technological progression more realistic through the stone age and bronze age",
+        "category": "Minecraft Mod",
+        "status": "active",
+        "stack": "Java, Forge",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/materia-0-1",
+        "features": [
+            "Knapping, hewing, lashing, and other primitive techniques",
+            "Bronze, tin, zinc, and other metals and alloys",
+            "More realistic metallurgy, including different temperature ranges for different kilns/furnaces",
+            "Spears, composite bows, bombs, dynamite, and cannons",
+            "11 new colors",
+            "New trees, flowers, crops, and other plants",
+            "Marble, limestone, wattle and daub, and thatch",
+            "Various architectural details like columns, finials, balustrades, and planters/urns",
+            "Decorative details like rugs, curtains, awnings, and shutters",
+            "Logic gates and other advanced redstone components"
+        ]
+    },
+    {
+        "name": "List Price Plus",
+        "description": "A browser extension and web app that shows the full estimated cost of owning a property, including taxes, utilities, insurance, maintenance, and other expenses",
+        "category": "Web App (whitelabel/b2b)",
+        "status": "in beta",
+        "stack": "TypeScript, Node.js, Google Firebase",
+        "features": [
+            "Scans a listing page for key information",
+            "Uses local averages/estimates for unknown values",
+            "Unknown values can be manually adjusted/overridden",
+            "Send a personalized, branded report to the user via email or as a PDF attachment"
+        ]
+    },
+    {
+        "name": "Turbo-API",
+        "description": "An NPM package for scaffolding APIs with minimal code, inspired by Entity Framework for .NET",
+        "category": "Library (public)",
+        "status": "active",
+        "stack": "TypeScript, Node.js",
+        "url": "https://www.npmjs.com/package/turbo-api",
+        "features": [
+            "Pre-built sets of CRUD operations for common schemas",
+            "Controller options to fine-tune endpoint access and validation",
+            "Easy-to-define shapes and validation rules for tables/controllers",
+            "Built-in support for AWS, Azure, Firebase, and local PostgreSQL database authorization and interaction"
+        ]
+    },
+    {
+        "name": "Beardyman VR",
+        "description": "A VR music production environment modeled after the Beardytron",
+        "category": "VR Game (private)",
+        "status": "in beta",
+        "stack": "C#, Unity",
+        "features": [
+            "Audio recording and playback",
+            "Looping and resampling",
+            "Effects and filters",
+            "Editable sequencers with pre-defined patterns",
+            "Virtual keyboard",
+            "Editable drums",
+            "Sick beats",
+            "Head-exploding basslines",
+            "Nagging sense of existential dread",
+            "Pretty fireflies",
+            "Everything is floaty"
+        ]
+    },
+    {
+        "name": "USS Concordia",
+        "description": "A VR simulation of a fully functional Oberth-class starship",
+        "category": "VR Game (private)",
+        "status": "in beta",
+        "stack": "C#, Unity",
+        "features": [
+            "Working shuttlecraft, turbolifts, and doors",
+            "Plasma streams animated in conduits and warp core",
+            "Warp core controls and UI",
+            "Light and decorative controls"
+        ]
+    },
+    {
+        "name": "Coder Dojo",
+        "description": "A crash course in coding for kids",
+        "category": "Website (public) + Workshop (private)",
+        "status": "active",
+        "stack": "React, Node.js",
+        "url": "https://androiddoctorr.github.io/Coder-Dojo/",
+        "features": [
+            "HTML, CSS, and JavaScript",
+            "Python and Arduino",
+            "Interactive lessons and exercises",
+            "Progress tracking and achievement badges",
+            "Parental engagement and support"
+        ]
+    }
+]

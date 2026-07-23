@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Old Website",
+        "description": "My old React website",
+        "category": "Website (public)",
+        "status": "superseded (by this)",
+        "date_deleted": "2026-07-23",
+        "features": [
+            "Color theme rotation (red, green, blue)",
+            "Easter eggs (90's mode, etc.)"
+        ]
+    },
+    {
+        "name": "GeoPad",
+        "description": "A web app for creating and sharing custom map data",
+        "category": "Web App (public)",
+        "status": "abandoned (Google My Maps is similar, Simon Malls also created something similar. Neither is as good, but it would be really hard to enter the market)",
+        "stack": "React, Node.js, Google Firebase",
+        "date_deleted": "2020-06-01",
+        "features": [
+            "Create personal map data anywhere",
+            "Create public map data for property you own/manage",
+            "Combined indoor/outdoor navigation",
+            "Emergency exits, elevators, and ramps are highlighted",
+            "Share personal map data with others",
+            "Comment on map data",
+            "Can work with Google Maps, Apple Maps, OSM, and other map services"
+        ]
+    }
+]

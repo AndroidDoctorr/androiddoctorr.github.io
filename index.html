@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>__SITE_TITLE__</title>
+    <meta name="description" content="__SITE_DESCRIPTION__" />
+    <meta name="author" content="__SITE_NAME__" />
+    <link rel="canonical" href="__SITE_URL__/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="__SITE_NAME__" />
+    <meta property="og:title" content="__SITE_TITLE__" />
+    <meta property="og:description" content="__SITE_DESCRIPTION__" />
+    <meta property="og:url" content="__SITE_URL__/" />
+    <meta property="og:image" content="__SITE_URL__/og-image.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="__SITE_TITLE__" />
+    <meta name="twitter:description" content="__SITE_DESCRIPTION__" />
+    <meta name="twitter:image" content="__SITE_URL__/og-image.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "__SITE_NAME__",
+        "jobTitle": "__SITE_TAGLINE__",
+        "url": "__SITE_URL__/",
+        "description": "__SITE_DESCRIPTION__",
+        "sameAs": ["__SITE_GITHUB__", "__SITE_LINKEDIN__"]
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <main>
+        <h1>__SITE_NAME__</h1>
+        <p>__SITE_TAGLINE__</p>
+        <p>__SITE_DESCRIPTION__</p>
+        <p>
+          <a href="__SITE_GITHUB__">GitHub</a>
+          ·
+          <a href="__SITE_LINKEDIN__">LinkedIn</a>
+        </p>
+      </main>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

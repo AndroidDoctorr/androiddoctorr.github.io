@@ -1,0 +1,125 @@
+[
+    {
+        "title": "NineStar Connect",
+        "url": "https://www.ninestarconnect.com/",
+        "color": "#065E84",
+        "roles": [
+            {
+                "title": "Software Developer",
+                "dates": "Jan 2025 - Present",
+                "duties": [
+                    "Primary software developer bridging network operations, business process automation, and infrastructure",
+                    "Built internal tools and APIs integrating SolarWinds, PRTG, Meraki, Calix, Elastic/Logstash, and internal databases",
+                    "Developed outage reporting and customer-facing outage communication tools",
+                    "Designed internal form and workflow systems to replace manual and third-party processes",
+                    "Built dashboards and automation for utility/ISP operations across internet, electric, water, and wastewater",
+                    "Prototyped on-prem AI/ML tooling for log analysis, anomaly detection, and internal knowledge workflows",
+                    "Worked across React, .NET, Node/Express, SQL/Postgres, PowerShell, Linux, nginx, Azure Static Web Apps, GitHub Actions, and enterprise authentication"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Eleven Fifty Academy",
+        "url": "https://www.elevenfifty.org/",
+        "color": "#85200c",
+        "roles": [
+            {
+                "title": "Curriculum Manager",
+                "dates": "Jan 2022 - Jan 2025",
+                "duties": [
+                    "Built new C#/.NET curriculum to introduce Blazor",
+                    "Combined React/JS and C#/.NET courses into Coding Foundations - full-stack web apps with a .NET back end and Blazor or React front end",
+                    "Built JS curriculum focused on DOM manipulation to bridge basic JS and React",
+                    "Built curriculum infrastructure: scheduling, rubrics, roles, and definitions",
+                    "Cross-trained instructors in C#/.NET, JS, and SQL"
+                ]
+            },
+            {
+                "title": "Senior Instructor",
+                "dates": "Mar 2021 - Jan 2022",
+                "duties": [
+                    "Taught Software Development (C#/.NET) courses - over 130 students across 6 classes",
+                    "Updated C#/.NET curriculum from Framework to .NET 6",
+                    "Introduced SQL and Agile fundamentals into the program",
+                    "Side projects in Azure Functions, Blazor, and ML.NET"
+                ]
+            },
+            {
+                "title": "Instructor",
+                "dates": "Jan 2020 - Mar 2021",
+                "duties": [
+                    "Taught Software Development (C#/.NET) courses - over 100 students across 5 classes",
+                    "Lectured, led code reviews, graded assignments, and answered student questions",
+                    "Moved to remote teaching in March 2020; managed classes with Canvas and Slack"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Turnitin",
+        "url": "https://www.turnitin.com/",
+        "color": "#3c78d8",
+        "roles": [
+            {
+                "title": "Software Engineer",
+                "dates": "Feb 2018 - Jan 2020",
+                "duties": [
+                    "Worked on front end for MOSS code similarity using React and Sass",
+                    "Built cross-platform migration function using AWS Lambda in Java",
+                    "Worked on Gradescope code similarity front end using Ruby on Rails and Sass",
+                    "Used Agile, submitted pull requests for code review, went to scrum meetings"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "VeriCite",
+        "color": "#cc4125",
+        "roles": [
+            {
+                "title": "Software Engineer",
+                "dates": "Aug 2016 - Feb 2018",
+                "duties": [
+                    "Taught myself React and TypeScript",
+                    "Built the entire VeriCite front end, twice",
+                    "Studied the details of web accessibility extensively, passed AAA for WCAG 2"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Eleven Fifty Consulting",
+        "url": "https://www.elevenfifty.org/",
+        "color": "#274e13",
+        "roles": [
+            {
+                "title": "Apprentice Coder",
+                "dates": "Aug 2015 - Aug 2016",
+                "duties": [
+                    "Worked on in-house and commercial contract projects across varied stacks",
+                    "Developed a commercial survey website using PHP and SQL",
+                    "Developed a PHP/SQL expo table-reservation site with email confirmation using WordPress",
+                    "Built Android (Java) image editing features for an experimental social media platform"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "The Orchard School",
+        "url": "https://www.orchard.org/",
+        "color": "#38761d",
+        "roles": [
+            {
+                "title": "Teacher",
+                "dates": "Sep 2014 - Jun 2015",
+                "duties": [
+                    "Taught 5th and 7th Technology classes",
+                    "Assisted with 6th and 8th Math and Science classes",
+                    "Coached LEGO Robotics team - trophy for most creative solutions",
+                    "Created curriculum for the new Technology course using Code.org, Scratch, Sphero, and more"
+                ]
+            }
+        ]
+    }
+]
