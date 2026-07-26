@@ -362,16 +362,9 @@ export default function MediaPlayerWindow({ tracks }) {
             onClick={toggleShuffle}
             aria-pressed={isShuffle}
             aria-label={`Shuffle ${isShuffle ? 'on' : 'off'}`}
+            title="Shuffle"
           >
-            <span className="media-player-window__toggle-icon" aria-hidden="true">
-              🔀
-            </span>
-            <span className="media-player-window__toggle-copy">
-              <strong>Shuffle</strong>
-              <span className="media-player-window__toggle-state">
-                {isShuffle ? 'On' : 'Off'}
-              </span>
-            </span>
+            🔀
           </button>
           <div className="media-player-window__transport">
             <button type="button" onClick={() => advanceTrack(-1)} aria-label="Previous track">
@@ -394,16 +387,9 @@ export default function MediaPlayerWindow({ tracks }) {
             onClick={toggleAutoplay}
             aria-pressed={autoplay}
             aria-label={`Autoplay ${autoplay ? 'on' : 'off'}`}
+            title="Autoplay"
           >
-            <span className="media-player-window__toggle-icon" aria-hidden="true">
-              ↻
-            </span>
-            <span className="media-player-window__toggle-copy">
-              <strong>Autoplay</strong>
-              <span className="media-player-window__toggle-state">
-                {autoplay ? 'On' : 'Off'}
-              </span>
-            </span>
+            ↻
           </button>
         </div>
 
