@@ -77,7 +77,10 @@ export function createCommandRegistry({
           }
           return formatList(
             'Music library:',
-            musicTracks.map((track) => `${track.title}${track.artist ? ` - ${track.artist}` : ''}`),
+            musicTracks.map(
+              (track) =>
+                `${track.title}${track.album ? ` (${track.album})` : ''}${track.artist ? ` - ${track.artist}` : ''}`,
+            ),
           )
         case 'recycle':
         case 'bin':

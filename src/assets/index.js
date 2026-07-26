@@ -1,10 +1,15 @@
 import desktopBackground from './background.png'
 import musicMetadata from '../data/music.json'
 
-const musicModules = import.meta.glob('./music/*.{mp3,ogg,wav}', {
+const musicModules = import.meta.glob('./music/**/*.{mp3,ogg,wav}', {
   eager: true,
   import: 'default',
   query: '?url',
+})
+
+const albumArtModules = import.meta.glob('./album_art/*.{png,jpg,jpeg,webp}', {
+  eager: true,
+  import: 'default',
 })
 
 const iconModules = import.meta.glob('./icons/*.{png,jpg,jpeg,webp}', {
@@ -62,6 +67,7 @@ function buildLookup(modules) {
 
 const icons = buildLookup(iconModules)
 const banners = buildLookup(bannerModules)
+const albumArt = buildLookup(albumArtModules)
 
 function buildScreenshotLookup(modules) {
   const lookup = {}
@@ -118,15 +124,30 @@ function humanizeFilename(filename) {
   return filename.replace(/\.[^.]+$/, '').replace(/[-_]+/g, ' ')
 }
 
+function albumSlugFromPath(path) {
+  const parts = path.split('/')
+  return parts.length > 2 ? parts[parts.length - 2] : null
+}
+
 export function getMusicTracks() {
-  const metadataByFile = Object.fromEntries(
-    musicMetadata.map((track) => [track.file, track]),
+  const metadataByFile = new Map(
+    musicMetadata.map((track, index) => [track.file, { ...track, order: index }]),
   )
+
+  const albumOrder = new Map()
+  musicMetadata.forEach((track, index) => {
+    if (track.album && !albumOrder.has(track.album)) {
+      albumOrder.set(track.album, index)
+    }
+  })
 
   return Object.entries(musicModules)
     .map(([path, src]) => {
       const file = path.split('/').pop()
-      const meta = metadataByFile[file] ?? {}
+      const metaEntry = metadataByFile.get(file)
+      const meta = metaEntry ?? {}
+      const albumSlug = albumSlugFromPath(path)
+      const album = meta.album ?? null
 
       return {
         id: file,
@@ -134,10 +155,17 @@ export function getMusicTracks() {
         src,
         title: meta.title ?? humanizeFilename(file),
         artist: meta.artist ?? null,
-        album: meta.album ?? null,
+        album,
+        albumArt: albumSlug ? albumArt[albumSlug] ?? null : null,
+        trackOrder: metaEntry?.order ?? Number.MAX_SAFE_INTEGER,
+        albumOrder: album ? (albumOrder.get(album) ?? Number.MAX_SAFE_INTEGER) : Number.MAX_SAFE_INTEGER,
       }
     })
-    .sort((a, b) => a.title.localeCompare(b.title))
+    .sort((a, b) => {
+      if (a.albumOrder !== b.albumOrder) return a.albumOrder - b.albumOrder
+      if (a.trackOrder !== b.trackOrder) return a.trackOrder - b.trackOrder
+      return a.title.localeCompare(b.title)
+    })
 }
 
 export { desktopBackground }
