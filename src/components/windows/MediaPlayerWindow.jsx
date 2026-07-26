@@ -355,35 +355,55 @@ export default function MediaPlayerWindow({ tracks }) {
           <button
             type="button"
             className={`media-player-window__toggle${
-              isShuffle ? ' media-player-window__toggle--active' : ''
+              isShuffle
+                ? ' media-player-window__toggle--active'
+                : ' media-player-window__toggle--inactive'
             }`}
             onClick={toggleShuffle}
             aria-pressed={isShuffle}
-            aria-label={isShuffle ? 'Disable shuffle' : 'Enable shuffle'}
-            title="Shuffle"
+            aria-label={`Shuffle ${isShuffle ? 'on' : 'off'}`}
           >
-            🔀
+            <span className="media-player-window__toggle-icon" aria-hidden="true">
+              🔀
+            </span>
+            <span className="media-player-window__toggle-copy">
+              <strong>Shuffle</strong>
+              <span className="media-player-window__toggle-state">
+                {isShuffle ? 'On' : 'Off'}
+              </span>
+            </span>
           </button>
-          <button type="button" onClick={() => advanceTrack(-1)} aria-label="Previous track">
-            ⏮
-          </button>
-          <button type="button" className="media-player-window__play" onClick={togglePlay}>
-            {isPlaying ? '⏸' : '▶'}
-          </button>
-          <button type="button" onClick={() => advanceTrack(1)} aria-label="Next track">
-            ⏭
-          </button>
+          <div className="media-player-window__transport">
+            <button type="button" onClick={() => advanceTrack(-1)} aria-label="Previous track">
+              ⏮
+            </button>
+            <button type="button" className="media-player-window__play" onClick={togglePlay}>
+              {isPlaying ? '⏸' : '▶'}
+            </button>
+            <button type="button" onClick={() => advanceTrack(1)} aria-label="Next track">
+              ⏭
+            </button>
+          </div>
           <button
             type="button"
             className={`media-player-window__toggle${
-              autoplay ? ' media-player-window__toggle--active' : ''
+              autoplay
+                ? ' media-player-window__toggle--active'
+                : ' media-player-window__toggle--inactive'
             }`}
             onClick={toggleAutoplay}
             aria-pressed={autoplay}
-            aria-label={autoplay ? 'Disable autoplay' : 'Enable autoplay'}
-            title="Autoplay"
+            aria-label={`Autoplay ${autoplay ? 'on' : 'off'}`}
           >
-            ↻
+            <span className="media-player-window__toggle-icon" aria-hidden="true">
+              ↻
+            </span>
+            <span className="media-player-window__toggle-copy">
+              <strong>Autoplay</strong>
+              <span className="media-player-window__toggle-state">
+                {autoplay ? 'On' : 'Off'}
+              </span>
+            </span>
           </button>
         </div>
 
