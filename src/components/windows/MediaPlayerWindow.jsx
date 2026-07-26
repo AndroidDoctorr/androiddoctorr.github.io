@@ -1,5 +1,13 @@
 import { useEffect, useRef, useState } from 'react'
-import { loadMediaVolume, saveMediaVolume } from '../../utils/mediaPlayerSettings'
+import {
+  buildShuffleOrder,
+  loadMediaAutoplay,
+  loadMediaShuffle,
+  loadMediaVolume,
+  saveMediaAutoplay,
+  saveMediaShuffle,
+  saveMediaVolume,
+} from '../../utils/mediaPlayerSettings'
 
 function formatTime(seconds) {
   if (!Number.isFinite(seconds)) return '0:00'
@@ -61,6 +69,8 @@ function buildAlbumGroups(tracks) {
 export default function MediaPlayerWindow({ tracks }) {
   const audioRef = useRef(null)
   const volumeBeforeMute = useRef(loadMediaVolume())
+  const shuffleOrderRef = useRef([])
+  const shufflePositionRef = useRef(0)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isPlaying, setIsPlaying] = useState(false)
   const [progress, setProgress] = useState(0)
@@ -68,13 +78,19 @@ export default function MediaPlayerWindow({ tracks }) {
   const [trackDurations, setTrackDurations] = useState({})
   const [volume, setVolume] = useState(loadMediaVolume)
   const [isMuted, setIsMuted] = useState(false)
+  const [autoplay, setAutoplay] = useState(loadMediaAutoplay)
+  const [isShuffle, setIsShuffle] = useState(loadMediaShuffle)
   const [collapsedAlbums, setCollapsedAlbums] = useState(() => new Set())
 
   const currentTrack = tracks[currentIndex]
   const albumGroups = buildAlbumGroups(tracks)
 
+  const syncShuffleOrder = (startIndex) => {
+    shuffleOrderRef.current = buildShuffleOrder(tracks.length, startIndex)
+    shufflePositionRef.current = 0
+  }
+
   useEffect(() => {
-    setIsPlaying(false)
     setProgress(0)
     setDuration(0)
   }, [currentIndex])
@@ -137,6 +153,20 @@ export default function MediaPlayerWindow({ tracks }) {
     }
   }, [volume, isMuted])
 
+  useEffect(() => {
+    saveMediaAutoplay(autoplay)
+  }, [autoplay])
+
+  useEffect(() => {
+    saveMediaShuffle(isShuffle)
+  }, [isShuffle])
+
+  useEffect(() => {
+    if (isShuffle) {
+      syncShuffleOrder(currentIndex)
+    }
+  }, [isShuffle, tracks.length])
+
   const toggleAlbum = (album) => {
     setCollapsedAlbums((collapsed) => {
       const next = new Set(collapsed)
@@ -153,16 +183,35 @@ export default function MediaPlayerWindow({ tracks }) {
     const audio = audioRef.current
     if (!audio || !currentTrack) return undefined
 
-    if (isPlaying) {
-      audio.play().catch(() => setIsPlaying(false))
-    } else {
+    if (!isPlaying) {
       audio.pause()
+      return undefined
     }
 
-    return undefined
+    const startPlayback = () => {
+      audio.play().catch(() => setIsPlaying(false))
+    }
+
+    if (audio.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA) {
+      startPlayback()
+    } else {
+      audio.addEventListener('canplay', startPlayback, { once: true })
+    }
+
+    return () => {
+      audio.removeEventListener('canplay', startPlayback)
+    }
   }, [currentTrack, isPlaying])
 
   const playTrack = (index) => {
+    if (isShuffle) {
+      if (shuffleOrderRef.current.length !== tracks.length) {
+        syncShuffleOrder(index)
+      } else {
+        shufflePositionRef.current = shuffleOrderRef.current.indexOf(index)
+      }
+    }
+
     setCurrentIndex(index)
     setIsPlaying(true)
   }
@@ -172,10 +221,53 @@ export default function MediaPlayerWindow({ tracks }) {
     setIsPlaying((playing) => !playing)
   }
 
-  const playAdjacent = (direction) => {
+  const advanceTrack = (direction) => {
     if (tracks.length === 0) return
+
+    if (isShuffle) {
+      if (shuffleOrderRef.current.length !== tracks.length) {
+        syncShuffleOrder(currentIndex)
+      }
+
+      let nextPosition = shufflePositionRef.current + direction
+
+      if (nextPosition >= shuffleOrderRef.current.length) {
+        nextPosition = 0
+      } else if (nextPosition < 0) {
+        nextPosition = shuffleOrderRef.current.length - 1
+      }
+
+      shufflePositionRef.current = nextPosition
+      setCurrentIndex(shuffleOrderRef.current[nextPosition])
+      setIsPlaying(true)
+      return
+    }
+
     setCurrentIndex((index) => (index + direction + tracks.length) % tracks.length)
     setIsPlaying(true)
+  }
+
+  const handleTrackEnded = () => {
+    if (!autoplay) {
+      setIsPlaying(false)
+      return
+    }
+
+    advanceTrack(1)
+  }
+
+  const toggleAutoplay = () => {
+    setAutoplay((enabled) => !enabled)
+  }
+
+  const toggleShuffle = () => {
+    setIsShuffle((enabled) => {
+      const next = !enabled
+      if (next) {
+        syncShuffleOrder(currentIndex)
+      }
+      return next
+    })
   }
 
   const handleSeek = (event) => {
@@ -260,14 +352,38 @@ export default function MediaPlayerWindow({ tracks }) {
 
       <div className="media-player-window__body">
         <div className="media-player-window__controls">
-          <button type="button" onClick={() => playAdjacent(-1)} aria-label="Previous track">
+          <button
+            type="button"
+            className={`media-player-window__toggle${
+              isShuffle ? ' media-player-window__toggle--active' : ''
+            }`}
+            onClick={toggleShuffle}
+            aria-pressed={isShuffle}
+            aria-label={isShuffle ? 'Disable shuffle' : 'Enable shuffle'}
+            title="Shuffle"
+          >
+            🔀
+          </button>
+          <button type="button" onClick={() => advanceTrack(-1)} aria-label="Previous track">
             ⏮
           </button>
           <button type="button" className="media-player-window__play" onClick={togglePlay}>
             {isPlaying ? '⏸' : '▶'}
           </button>
-          <button type="button" onClick={() => playAdjacent(1)} aria-label="Next track">
+          <button type="button" onClick={() => advanceTrack(1)} aria-label="Next track">
             ⏭
+          </button>
+          <button
+            type="button"
+            className={`media-player-window__toggle${
+              autoplay ? ' media-player-window__toggle--active' : ''
+            }`}
+            onClick={toggleAutoplay}
+            aria-pressed={autoplay}
+            aria-label={autoplay ? 'Disable autoplay' : 'Enable autoplay'}
+            title="Autoplay"
+          >
+            ↻
           </button>
         </div>
 
@@ -369,6 +485,7 @@ export default function MediaPlayerWindow({ tracks }) {
 
       {currentTrack && (
         <audio
+          key={currentTrack.id}
           ref={audioRef}
           src={currentTrack.src}
           onTimeUpdate={(event) => setProgress(event.currentTarget.currentTime)}
@@ -383,7 +500,7 @@ export default function MediaPlayerWindow({ tracks }) {
               }))
             }
           }}
-          onEnded={() => playAdjacent(1)}
+          onEnded={handleTrackEnded}
         />
       )}
     </article>
