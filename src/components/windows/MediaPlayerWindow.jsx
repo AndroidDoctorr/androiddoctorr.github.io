@@ -19,6 +19,21 @@ function volumeIcon(volume, isMuted) {
   return '🔊'
 }
 
+function formatAlbumMeta({ artist, year, trackCount }) {
+  const parts = [
+    artist ?? 'Unknown artist',
+    year ? String(year) : null,
+    `${trackCount} tracks`,
+  ].filter(Boolean)
+
+  return parts.join(' · ')
+}
+
+function formatAlbumLabel(album, year) {
+  if (!album) return 'Now playing'
+  return year ? `${album} · ${year}` : album
+}
+
 function buildAlbumGroups(tracks) {
   const groups = []
   const albumIndex = new Map()
@@ -32,6 +47,7 @@ function buildAlbumGroups(tracks) {
         album,
         albumArt: track.albumArt,
         artist: track.artist,
+        year: track.albumYear,
         tracks: [],
       })
     }
@@ -234,7 +250,7 @@ export default function MediaPlayerWindow({ tracks }) {
           )}
           <div className="media-player-window__hero-copy">
             <p className="media-player-window__eyebrow">
-              {currentTrack.album ?? 'Now playing'}
+              {formatAlbumLabel(currentTrack.album, currentTrack.albumYear)}
             </p>
             <h2>{currentTrack.title}</h2>
             <p>{currentTrack.artist ?? 'Local library'}</p>
@@ -311,7 +327,11 @@ export default function MediaPlayerWindow({ tracks }) {
                   <span className="media-player-window__album-copy">
                     <strong>{group.album}</strong>
                     <span>
-                      {group.artist ?? 'Unknown artist'} · {group.tracks.length} tracks
+                      {formatAlbumMeta({
+                        artist: group.artist,
+                        year: group.year,
+                        trackCount: group.tracks.length,
+                      })}
                     </span>
                   </span>
                   <span className="media-player-window__album-toggle" aria-hidden="true">

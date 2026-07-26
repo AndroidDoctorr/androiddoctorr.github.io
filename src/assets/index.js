@@ -1,5 +1,6 @@
 import desktopBackground from './background.png'
 import musicMetadata from '../data/music.json'
+import albumMetadata from '../data/albums.json'
 
 const musicModules = import.meta.glob('./music/**/*.{mp3,ogg,wav}', {
   eager: true,
@@ -141,6 +142,10 @@ export function getMusicTracks() {
     }
   })
 
+  const albumYears = Object.fromEntries(
+    albumMetadata.map((entry) => [entry.album, entry.year]),
+  )
+
   return Object.entries(musicModules)
     .map(([path, src]) => {
       const file = path.split('/').pop()
@@ -157,6 +162,7 @@ export function getMusicTracks() {
         artist: meta.artist ?? null,
         album,
         albumArt: albumSlug ? albumArt[albumSlug] ?? null : null,
+        albumYear: album ? albumYears[album] ?? null : null,
         trackOrder: metaEntry?.order ?? Number.MAX_SAFE_INTEGER,
         albumOrder: album ? (albumOrder.get(album) ?? Number.MAX_SAFE_INTEGER) : Number.MAX_SAFE_INTEGER,
       }
