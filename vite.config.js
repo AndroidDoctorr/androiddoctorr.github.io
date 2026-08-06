@@ -7,7 +7,7 @@ function buildSiteConfig(env) {
   return {
     url: env.VITE_SITE_URL ?? 'https://androiddoctorr.github.io',
     base: '/',
-    title: 'Andrew Torr — Portfolio',
+    title: 'Andrew Torr',
     description:
       'Internal systems developer building web apps, APIs, dashboards, and AI-assisted automation for utilities, ISPs, and small organizations.',
     name: 'Andrew Torr',

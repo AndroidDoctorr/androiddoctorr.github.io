@@ -39,10 +39,10 @@ If you deploy a **project site** (not `username.github.io`), set in `vite.config
 
 ## Structure
 
-- `src/data/` — JSON content (projects, experience, education, etc.)
-- `src/components/desktop/` — desktop icons and right-click menu
-- `src/components/taskbar/` — Start button, clock, and Start menu
-- `src/components/windows/` — draggable/resizable program windows
-- `reference/` — original JSON exports from the old site
+- `src/data/` - JSON content (projects, experience, education, etc.)
+- `src/components/desktop/` - desktop icons and right-click menu
+- `src/components/taskbar/` - Start button, clock, and Start menu
+- `src/components/windows/` - draggable/resizable program windows
+- `reference/` - original JSON exports from the old site
 
 See `docs/plan.md` and `docs/roadmap.md` for the full vision.
