@@ -1,7 +1,7 @@
 export const SITE_URL =
   import.meta.env.VITE_SITE_URL ?? 'https://androiddoctorr.github.io'
 
-export const SITE_TITLE = 'Andrew Torr — Portfolio'
+export const SITE_TITLE = 'Andrew Torr'
 
 export const SITE_DESCRIPTION =
   'Internal systems developer building web apps, APIs, dashboards, and AI-assisted automation for utilities, ISPs, and small organizations.'
