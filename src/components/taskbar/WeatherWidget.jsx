@@ -9,7 +9,7 @@ export default function WeatherWidget() {
       title={
         weather.loading
           ? 'Loading weather'
-          : `${weather.label} in ${weather.city}${weather.source === 'fallback' ? ' (default)' : ''}`
+          : `${weather.label} in ${weather.city}`
       }
       aria-label={
         weather.loading
